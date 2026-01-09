@@ -1,0 +1,7 @@
+{
+  "liveServer.settings.wait": 500,
+  "files.associations": {
+   "input.css": "tailwindcss"
+ }
+
+}

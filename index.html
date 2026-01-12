@@ -9,49 +9,66 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 </head>
 
-<body class="bg-dark max-w-5xl mx-auto">
-
-    <nav class="flex justify-between w-full fixed py-4 px-4 bg-primary-700 shadow-lg shadow-black/50 z-2">
-        <div>
-            <a href="#" class="font-bold text-xl">Yahir Adrian</a>
-        </div>
-            
-        <ul class="list-none flex gap-6 ">
-            <li>
-                <a href="#projects" aria-label="Go to projects section"
-                class="text-lg font-bold"
-                >Projects</a>
-            </li>
-            <li>
-
-                <a href="#skills" aria-label="Go to skills section"
-                class="text-lg font-bold"
-                >Skills</a>
-            </li>    
-            <li>
-
-                <a href="#contact" aria-label="Go to skills section"
-                class="text-lg font-bold"
-                >Skills</a>
-            </li>
-            <li>
-
-                <a href="/es/" aria-label="Change language to Spanish"
-                class="text-lg font-bold"
-                >English</a>
-            </li>
-            <li>
-
-                <a href="#" aria-label="Change light mode"
-                class="text-lg font-bold"
-                >Light</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- <div  id="header-separation" class="h-16"></div> -->
+<body class="bg-dark">
 
     <!-- HEADER PICTURE, NAME AND ROLE -->
     <header class="flex flex-col items-center justify-center min-h-screen">
+
+        <nav class="fixed w-full top-0 left-0 flex justify-between bg-primary-500 z-2 shadow-md shadow-black/50">
+            <div class="flex items-center p-4">
+                <img src="assets/icons/logo/icon.png" alt="Yahir Adrian logo" width="36"/>
+                <h1 class="hidden sm:block text-2xl ms-2 font-bold">
+                    <a href="#">Yahir Ortiz</a>
+                    
+                </h1>
+            </div>
+
+            <div class="flex items-center">
+                <div class="flex items-center font-bold h-full">
+                    <ul id="nav-links" class="absolute sm:static top-16 right-0 flex flex-col sm:flex-row gap-6 w-full h-0 overflow-hidden sm:w-auto text-lg bg-primary-500 text-center p-3 sm:p-0 transition-all duration-300">
+                        <li class="hover:bg-accent/50 rounded-md px-3 py-2">
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li class="hover:bg-accent/50 rounded-md px-3 py-2">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="hover:bg-accent/50 rounded-md px-3 py-2">
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div id="custom-language-selector" class="cursor-pointer ms-2 relative" title="Switch language">
+                    <button type="button" id="selected-language" class="flex items-center gap-2 px-2 py-1 rounded transition min-w-15">
+                        <img src="assets/icons/lang/en.svg" alt="English icon" width="24" class="inline"/>
+                        <span class="font-bold">EN</span>
+                        <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <ul id="language-options" class="absolute left-0 mt-1 w-full bg-primary-300 rounded shadow-lg z-10 hidden">
+                        <li class="flex items-center gap-2 px-2 py-1 cursor-pointer hover:bg-primary-100" data-lang="en">
+                            <img src="assets/icons/lang/en.svg" alt="English icon" width="24" class="inline"/>
+                            <span class="font-bold">EN</span>
+                        </li>
+                        <li class="flex items-center gap-2 px-2 py-1 cursor-pointer hover:bg-primary-100" data-lang="es">
+                            <img src="assets/icons/lang/es.svg" alt="Spanish icon" width="24" class="inline"/>
+                            <span class="font-bold">ES</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="theme" class="flex items-center cursor-pointer me-2" title="Toggle light/dark mode">
+                    <button id="theme-toggle" class="py-3 px-2">
+                        <img id="theme-icon" src="assets/icons/dark/light.svg" alt="Light mode icon" width="24"/>
+                    </button>
+                </div>
+
+                <button  id="burger-menu"class="sm:hidden mx-3 text-white p-2 cursor-pointer" aria-label="Click to open menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </nav>
+
         <div id="image-container"
             class="w-56 h-56 my-8 rounded-full bg-primary-500 flex justify-center shadow-md shadow-black/50"
         >
@@ -235,7 +252,93 @@
             </div>
         </div>
 
-        
+        <!-- Skills section -->
+        <section id="skills" class="mt-8 px-8">
+            <h2 class="text-4xl font-bold">My Tech Skills</h2>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <article id="frontend" class="p-6 relative border border-accent rounded-4xl bg-white/10 backdrop-blur-2xl">
+                    <h3 class="absolute text-2xl text-center font-extrabold -top-1 left-1/2 -translate-1/2 bg-primary-100 text-dark p-3 rounded-xl">Frontend</h3>
+                    <div class="grid grid-cols-2">
+                        <div class="flex flex-col items-center p-5 hover:scale-115 transition-transform duration-150 ease-in cursor-pointer">
+                          <img class="w-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML icon"/>
+                          <span class="text-lg font-bold">HTML</span>
+                        </div>
+                        <div class="flex flex-col items-center p-5 hover:scale-115 transition-transform duration-150 ease-in cursor-pointer">
+                          <img class="w-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS icon"/>
+                          <span class="text-lg font-bold">CSS</span>
+                        </div>
+                        <div class="flex flex-col items-center p-5 hover:scale-115 transition-transform duration-150 ease-in cursor-pointer">
+                          <img class="w-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript icon"/>
+                          <span class="text-lg font-bold">JavaScript</span>
+                        </div>
+                        <div class="flex flex-col items-center p-5 hover:scale-115 transition-transform duration-150 ease-in cursor-pointer">
+                          <img class="w-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript icon"/>
+                          <span class="text-lg font-bold">TypeScript</span>
+                        </div>
+                        <div class="flex flex-col items-center p-5 hover:scale-115 transition-transform duration-150 ease-in cursor-pointer">
+                          <img class="w-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="ReactJS icon"/>
+                          <span class="text-lg font-bold">React JS</span>
+                        </div>
+                        <div class="flex flex-col items-center p-5 hover:scale-115 transition-transform duration-150 ease-in cursor-pointer">
+                          <img class="w-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="ReactJS icon"/>
+                          <span class="text-lg font-bold">Bootstrap</span>
+                        </div>
+                        <div class="flex flex-col items-center p-5 hover:scale-115 transition-transform duration-150 ease-in cursor-pointer">
+                          <img class="w-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="ReactJS icon"/>
+                          <span class="text-lg font-bold">Tailwind</span>
+                        </div>
+                    </div>
+                </article>
+                <article id="backend" class="p-6 relative border border-accent rounded-4xl bg-white/10 backdrop-blur-2xl">
+                    <h3 class="absolute text-2xl text-center font-extrabold -top-1 left-1/2 -translate-1/2 bg-primary-100 text-dark p-3 rounded-xl">Backend</h3>
+                    <div class="grid grid-cols-2 place-items-center">
+                        <div class="flex flex-col items-center p-5 hover:scale-115 transition-transform duration-150 ease-in cursor-pointer">
+                          <img class="w-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP icon"/>
+                          <span class="text-lg font-bold">PHP</span>
+                        </div>
+                        <div class="flex flex-col items-center p-5 hover:scale-115 transition-transform duration-150 ease-in cursor-pointer">
+                          <img class="w-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL icon"/>
+                          <span class="text-lg font-bold">MySQL</span>
+                        </div>
+                        <div class="flex flex-col items-center p-5 hover:scale-115 transition-transform duration-150 ease-in cursor-pointer">
+                          <img class="w-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="Laravel icon"/>
+                          <span class="text-lg font-bold">Laravel</span>
+                        </div>
+                        
+                        <div class="flex flex-col items-center p-5 hover:scale-115 transition-transform duration-150 ease-in cursor-pointer">
+                          <img class="w-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="NodeJs icon"/>
+                          <span class="text-lg font-bold">NodeJs</span>
+                        </div>
+                        <div class="flex flex-col items-center p-5 hover:scale-115 transition-transform duration-150 ease-in cursor-pointer">
+                          <img class="w-12" src="https://images.icon-icons.com/2699/PNG/512/wordpress_logo_icon_167953.png" alt="WordPress icon"/>
+                          <span class="text-lg font-bold">WordPress</span>
+                        </div>
+                        
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="mt-30">
+            <h2 class="text-4xl font-bold">Contact Me</h2>
+            <p class="mt-4 text-lg">Feel free to reach out for collaborations or just a friendly hello!</p>
+            <form action="https://formspree.io/f/xdaaonbz" method="POST" class="mt-8 max-w-2xl mx-auto flex flex-col gap-6 bg-dark-700 p-8 rounded-2xl shadow-lg">
+                <div>
+                    <label for="name" class="block mb-2 font-bold">Name</label>
+                    <input type="text" id="name" name="name" required class="w-full px-4 py-2 rounded-lg bg-dark-500 border border-primary-300 focus:outline-none focus:ring-2 focus:ring-accent" />
+                </div>
+                <div>
+                    <label for="email" class="block mb-2 font-bold">Email</label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-2 rounded-lg bg-dark-500 border border-primary-300 focus:outline-none focus:ring-2 focus:ring-accent" />
+                </div>
+                <div>
+                    <label for="message" class="block mb-2 font-bold">Message</label>
+                    <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 rounded-lg bg-dark-500 border border-primary-300 focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
+                </div>
+                <button type="submit" class="py-3 px-8 bg-primary-500 text-white font-bold rounded-xl hover:bg-primary-600 transition-colors">Send Message</button>
+            </form>
+        </section>
 
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -244,6 +347,57 @@
             new Swiper('.swiper2', { loop: true, pagination: { el: '.swiper2 .swiper-pagination', clickable: true }, navigation: { nextEl: '.swiper2 .swiper-button-next', prevEl: '.swiper2 .swiper-button-prev' } });
             new Swiper('.swiper3', { loop: true, pagination: { el: '.swiper3 .swiper-pagination', clickable: true }, navigation: { nextEl: '.swiper3 .swiper-button-next', prevEl: '.swiper3 .swiper-button-prev' } });
             new Swiper('.swiper4', { loop: true, pagination: { el: '.swiper4 .swiper-pagination', clickable: true }, navigation: { nextEl: '.swiper4 .swiper-button-next', prevEl: '.swiper4 .swiper-button-prev' } });
+        // Custom language selector logic
+        (function() {
+            const selector = document.getElementById('custom-language-selector');
+            if (!selector) return;
+            const button = selector.querySelector('#selected-language');
+            const options = selector.querySelector('#language-options');
+            const optionItems = options.querySelectorAll('li');
+
+            // Toggle dropdown
+            button.addEventListener('click', function(e) {
+                e.stopPropagation();
+                options.classList.toggle('hidden');
+            });
+
+            // Select language
+            optionItems.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    // Update button content
+                    const img = item.querySelector('img').cloneNode(true);
+                    const span = item.querySelector('span').cloneNode(true);
+                    button.innerHTML = '';
+                    button.appendChild(img);
+                    button.appendChild(span);
+                    // Add dropdown arrow
+                    const arrow = document.createElement('svg');
+                    arrow.className = 'ml-1 w-4 h-4';
+                    arrow.setAttribute('fill', 'none');
+                    arrow.setAttribute('stroke', 'currentColor');
+                    arrow.setAttribute('viewBox', '0 0 24 24');
+                    arrow.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>';
+                    button.appendChild(arrow);
+                    options.classList.add('hidden');
+                });
+            });
+
+            // Close dropdown on outside click
+            document.addEventListener('click', function(e) {
+                if (!selector.contains(e.target)) {
+                    options.classList.add('hidden');
+                }
+            });
+        })();
+
+        // Burger menu toggle
+        const burgerMenu = document.querySelector('#burger-menu');
+        const navLinks = document.querySelector('#nav-links');
+
+        burgerMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('h-fit');
+        });
         </script>
     </section>
 </body>

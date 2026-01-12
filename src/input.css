@@ -17,3 +17,7 @@ body{
     font-family: "Rubik", sans-serif;
     color: var(--color-light)
 }
+
+html {
+scroll-behavior: smooth;
+}

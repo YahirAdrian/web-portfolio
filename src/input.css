@@ -9,6 +9,7 @@
     --color-primary-100: #94B4C1;
 
     --color-accent: #007aff;
+    --color-accent-dark: #0050a7;
     --color-dark: #232323;
     --color-light: #F7F7F7;
 }
@@ -20,4 +21,8 @@ body{
 
 html {
 scroll-behavior: smooth;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: var(--color-light) !important;
 }

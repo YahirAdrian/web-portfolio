@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yahir Adrian | Web Developer</title>
     <link rel="icon" type="image/x-icon" href="assets/icons/logo/icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="dist/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 </head>
 
-<body class="bg-dark">
-    <!-- HEADER PICTURE, NAME AND ROLE -->
+<body class="bg-linear-to-br from-primary-700 to-primary-700/90">
     <header class="flex flex-col items-center justify-center min-h-screen">
 
         <nav class="fixed w-full top-0 left-0 flex justify-between bg-primary-500 z-2 shadow-md shadow-black/50">
@@ -18,7 +19,6 @@
                 <img src="assets/icons/logo/icon.png" alt="Yahir Adrian logo" width="36"/>
                 <h1 class="hidden sm:block text-2xl ms-2 font-bold">
                     <a href="#">Yahir Ortiz</a>
-                    
                 </h1>
             </div>
 
@@ -56,27 +56,21 @@
                     </ul>
                 </div>
 
-                <div id="theme" class="flex items-center cursor-pointer me-2" title="Toggle light/dark mode">
-                    <button id="theme-toggle" class="py-3 px-2">
-                        <img id="theme-icon" src="assets/icons/dark/light.svg" alt="Light mode icon" width="24"/>
-                    </button>
-                </div>
-
                 <button  id="burger-menu"class="sm:hidden mx-3 text-white p-2 cursor-pointer" aria-label="Click to open menu">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                 </button>
             </div>
         </nav>
 
-        <div id="image-container"
-            class="w-56 h-56 my-8 rounded-full bg-primary-500 flex justify-center shadow-md shadow-black/50"
-        >
-            <img src="assets/icons/light/user.svg" alt="Yahir Adrian profile picture"  width="50%"/>
-        </div>
-        <h1 class="text-4xl font-bold text-shadow-2xs shadow-primary-500">Yahir Adrian</h1>
-        <p class="my-4 font-bold">Web developer</p>
+        <div class="flex flex-col justify-center items-center">
 
-        <nav id="contact-icons" class="flex gap-4">
+            <h1 class="text-5xl md:text-8xl font-bold text-shadow-lg text-shadow-black/70">Yahir Ortiz</h1>
+            <p class="text-3xl my-4 mt-6"> Web developer </p>
+    
+            <p class="opacity-60 mt-4 text-center"> React • JavaScript • PHP • Laravel</p>
+        </div>
+
+        <nav id="contact-icons" class="flex gap-4 mt-6">
             <a href="https://github.com/YahirAdrian" title="Github"
                 class="text-white hover:text-sky-300 transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]"
             >
@@ -100,21 +94,27 @@
 
 
         </nav>
-        <a href="assets/cv.pdf"
-         class="group my-8 py-4 px-12 border-4 rounded-3xl font-bold text-lg transition-colors duration-300 hover:bg-accent/10 hover:border-accent hover:text-accent"
-         >
-            <img class="inline mr-2 fill-light group-hover:fill-accent/50 transition-colors duration-300" src="assets/icons/light/cv.svg" alt="Download CV icon" width="24" />
 
+        <div class="flex flex-col sm:flex-row justify-center items-center mt-6 gap-3">
+             <a href="#projects"
+             class="group py-3 px-3 border-4 rounded-3xl font-bold text-lg transition-colors duration-300 hover:bg-accent/10 hover:border-accent hover:text-accent"
+             >
+                <span>View Projects</span>
+            </a>
+            <a href="assets/cv.pdf"
+             class="group py-3 px-3 border-4 rounded-3xl font-bold text-lg transition-colors duration-300 hover:bg-accent/10 hover:border-accent hover:text-accent"
+             >
+                <span>Download CV</span>
+            </a>
            
-            <span>Download CV</span>
-        </a>
+        </div>
     </header>
     <main class="mx-3 sm:mx-8 md:mx-12 xl:mx-24">
         <section id="projects" class="mt-16 px-6">
-                <h2 class="text-4xl font-bold">My projects</h2>
+                <h2 class="text-4xl md:text-5xl font-bold">My projects</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
                     <!-- Project 1 -->
-                    <div class="bg-dark-700 rounded-xl shadow-lg p-6 flex flex-col">
+                    <div class="bg-dark rounded-xl shadow-gray-400/10 shadow-lg p-6 lg:p-10 flex flex-col">
                         <div class="relative w-full mb-4 overflow-hidden rounded-lg">
                             <div class="swiper swiper1">
                                 <div class="swiper-wrapper aspect-video">
@@ -127,16 +127,29 @@
                                 <div class="swiper-button-next"></div>
                             </div>
                         </div>
-                        <h3 class="text-2xl font-semibold mb-2">Fastie Feastie's</h3>
-                        <p class="mb-4 text-gray-300">A modern, responsive portfolio website built with HTML, CSS, and JavaScript to showcase my work and skills.</p>
+                        <h3 class="text-2xl md:text-3xl font-semibold mb-2">Fastie Feastie's</h3>
+                        <p class="mb-4 text-gray-300 md:text-xl">An interactive digital menu for a fast-food restaurant to improve customer ordering experience. </p>
+                        <div class="tech-tags mb-4">
+                            <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">React</span>
+                            <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">TypeScript</span>
+                            <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">Tailwind CSS</span>
+                            <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">PHP</span>
+                            <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">Laravel</span>
+                        </div>
                         <div class="mt-auto flex gap-3">
-                            <a href="https://fastie-feasties-react.vercel.app/" target="_blank" class="py-2 px-4 bg-primary-500 text-white rounded-lg font-bold hover:bg-primary-600 transition">Preview</a>
-                            <a href="https://github.com/YahirAdrian/fastie-feasties-react" target="_blank" class="py-2 px-4 border border-accent text-accent rounded-lg font-bold hover:bg-accent hover:text-white transition">Repo</a>
+                            <a href="https://fastie-feasties-react.vercel.app/" target="_blank" class="py-2 px-4 bg-accent text-white rounded-lg font-bold hover:bg-primary-600 transition">
+                                <img src="assets/icons/light/external-link.svg" alt="External link icon" width="16" class="inline mr-2"/>
+                                <span>Preview</span>
+                            </a>
+                            <a href="https://github.com/YahirAdrian/fastie-feasties-react" target="_blank" class="py-2 px-4 border border-gray- bg-primary-700 rounded-lg font-bold hover:bg-primary-500 hover:text-white transition">
+                                <img src="assets/icons/light/github.svg" alt="Github icon" width="16" class="inline mr-2">
+                                <span>Code</span>
+                            </a>
                         </div>
                     </div>
 
                     <!-- Project 2 -->
-                    <div class="bg-dark-700 rounded-xl shadow-lg p-6 flex flex-col">
+                    <div class="bg-dark shadow-gray-400/10 rounded-xl shadow-lg p-6 lg:p-10 flex flex-col">
                         <div class="relative w-full mb-4 overflow-hidden rounded-lg">
                             <div class="swiper swiper2">
                                 <div class="swiper-wrapper aspect-video">
@@ -149,16 +162,27 @@
                                 <div class="swiper-button-next"></div>
                             </div>
                         </div>
-                        <h3 class="text-2xl font-semibold mb-2">Class Planner</h3>
-                        <p class="mb-4 text-gray-300">A modern, responsive portfolio website built with HTML, CSS, and JavaScript to showcase my work and skills.</p>
+                        <h3 class="text-2xl md:text-3xl font-semibold mb-2">Class Planner</h3>
+                        <p class="mb-4 text-gray-300 md:text-xl">A student planner application to organize class agenda by subject, tasks and notes.</p>
+                        <div class="tech-tags mb-4">
+                            <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">React</span>
+                            <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">JavaScript</span>
+                            <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">Bootstrap</span>
+                        </div>
                         <div class="mt-auto flex gap-3">
-                            <a href="https://class-planner.netlify.app/" target="_blank" class="py-2 px-4 bg-primary-500 text-white rounded-lg font-bold hover:bg-primary-600 transition">Preview</a>
-                            <a href="https://github.com/YahirAdrian/class-planner" target="_blank" class="py-2 px-4 border border-accent text-accent rounded-lg font-bold hover:bg-accent hover:text-white transition">Repo</a>
+                            <a href="https://class-planner.netlify.app/" target="_blank" class="py-2 px-4 bg-accent text-white rounded-lg font-bold hover:bg-primary-600 transition">
+                                <img src="assets/icons/light/external-link.svg" alt="External link icon" width="16" class="inline mr-2"/>
+                                <span>Preview</span>
+                            </a>
+                            <a href="https://github.com/YahirAdrian/class-planner" target="_blank" class="py-2 px-4 border border-gray- bg-primary-700 rounded-lg font-bold hover:bg-primary-500 hover:text-white transition">
+                                <img src="assets/icons/light/github.svg" alt="Github icon" width="16" class="inline mr-2">
+                                <span>Code</span>
+                            </a>
                         </div>
                     </div>
 
                     <!-- Project 3-->
-                    <div class="bg-dark-700 rounded-xl shadow-lg p-6 flex flex-col">
+                    <div class="bg-dark rounded-xl shadow-gray-400/10 shadow-lg p-6 flex flex-col">
                         <div class="relative w-full mb-4 overflow-hidden rounded-lg">
                             <div class="swiper swiper3">
                                 <div class="swiper-wrapper aspect-video">
@@ -172,14 +196,26 @@
                             </div>
                         </div>
                         <h3 class="text-2xl font-semibold mb-2">Space English</h3>
-                        <p class="mb-4 text-gray-300">A modern, responsive portfolio website built with HTML, CSS, and JavaScript to showcase my work and skills.</p>
+                        <p class="mb-4 text-gray-300">English leaarning website to practice vocabulary and grammar through interactive activities.</p>
+                        <div class="tech-tags mb-4">
+                            <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">HTML</span>
+                            <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">CSS</span>
+                            <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">JavaScript</span>
+                            <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">Bootstrap</span>
+                        </div>
                         <div class="mt-auto flex gap-3">
-                            <a href="https://space-english.netlify.app/" target="_blank" class="py-2 px-4 bg-primary-500 text-white rounded-lg font-bold hover:bg-primary-600 transition">Preview</a>
-                            <a href="https://github.com/YahirAdrian/spaceenglish" target="_blank" class="py-2 px-4 border border-accent text-accent rounded-lg font-bold hover:bg-accent hover:text-white transition">Repo</a>
+                            <a href="https://space-english.netlify.app/" target="_blank" class="py-2 px-4 bg-accent text-white rounded-lg font-bold hover:bg-primary-600 transition">
+                                <img src="assets/icons/light/external-link.svg" alt="External link icon" width="16" class="inline mr-2"/>
+                                <span>Preview</span>
+                            </a>
+                            <a href="https://github.com/YahirAdrian/spaceenglish" target="_blank" class="py-2 px-4 border border-gray- bg-primary-700 rounded-lg font-bold hover:bg-primary-500 hover:text-white transition">
+                                <img src="assets/icons/light/github.svg" alt="Github icon" width="16" class="inline mr-2">
+                                <span>Code</span>
+                            </a>
                         </div>
                     </div>
                     <!-- Project 4 -->
-                    <div class="bg-dark-700 rounded-xl shadow-lg p-6 flex flex-col">
+                    <div class="bg-dark rounded-xl shadow-gray-400/10 shadow-lg p-6 lg:p-10 flex flex-col">
                         <div class="relative w-full mb-4 overflow-hidden rounded-lg">
                             <div class="swiper swiper4">
                                 <div class="swiper-wrapper aspect-video">
@@ -193,10 +229,22 @@
                             </div>
                         </div>
                         <h3 class="text-2xl font-semibold mb-2">Univesal Movers</h3>
-                        <p class="mb-4 text-gray-300">A modern, responsive portfolio website built with HTML, CSS, and JavaScript to showcase my work and skills.</p>
+                        <p class="mb-4 text-gray-300">Moving services landing page, using pixel-perfect conversion from Figma design. </p>
+                        <div class="tech-tags mb-4">
+                            <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">HTML</span>
+                            <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">CSS</span>
+                            <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">JavaScript</span>
+                            <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">Bootstrap</span>
+                        </div>
                         <div class="mt-auto flex gap-3">
-                            <a href="https://universal-movers-template.netlify.app/" target="_blank" class="py-2 px-4 bg-primary-500 text-white rounded-lg font-bold hover:bg-primary-600 transition">Preview</a>
-                            <a href="https://github.com/YahirAdrian/universal-movers" target="_blank" class="py-2 px-4 border border-accent text-accent rounded-lg font-bold hover:bg-accent hover:text-white transition">Repo</a>
+                            <a href="https://universal-movers-template.netlify.app/" target="_blank" class="py-2 px-4 bg-accent text-white rounded-lg font-bold hover:bg-primary-600 transition">
+                                <img src="assets/icons/light/external-link.svg" alt="External link icon" width="16" class="inline mr-2"/>
+                                <span>Preview</span>
+                            </a>
+                            <a href="https://github.com/YahirAdrian/universal-movers" target="_blank" class="py-2 px-4 border border-gray- bg-primary-700 rounded-lg font-bold hover:bg-primary-500 hover:text-white transition">
+                                <img src="assets/icons/light/github.svg" alt="Github icon" width="16" class="inline mr-2">
+                                <span>Code</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -204,7 +252,7 @@
         </section>
 
         <section id="about" class="mt-16">
-            <h2 class="text-4xl font-bold mt-16 px-8">About Me</h2>
+            <h2 class="text-4xl md:text-5xl font-bold mt-16 px-8">About Me</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="flex items-center">
@@ -220,11 +268,11 @@
 
 
         <section id="skills" class="mt-16 px-8">
-            <h2 class="text-4xl font-bold">My Tech Skills</h2>
+            <h2 class="text-4xl md:text-5xl font-bold">My Tech Skills</h2>
     
             <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 md:mx-8 justify-center">
                 <article id="frontend" class="p-6 relative border border-accent rounded-4xl bg-white/10 backdrop-blur-2xl">
-                    <h3 class="absolute text-2xl text-center font-extrabold -top-1 left-1/2 -translate-1/2 bg-gradient-to-tr from-primary-100 to-accent text-dark p-3 rounded-xl">Frontend</h3>
+                    <h3 class="absolute text-2xl text-center font-extrabold -top-1 left-1/2 -translate-1/2 bg-linear-to-tr from-primary-100 to-accent text-dark p-3 rounded-xl">Frontend</h3>
                     <div class="grid grid-cols-2 md:grid-cols-3 pt-4">
                         <div class="flex flex-col items-center p-5 hover:scale-115 transition-transform duration-150 ease-in cursor-pointer">
                           <img class="w-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML icon"/>
@@ -257,7 +305,7 @@
                     </div>
                 </article>
                 <article id="backend" class="mt-16 sm:mt-0 p-6 relative border border-accent rounded-4xl bg-white/10 backdrop-blur-2xl">
-                    <h3 class="absolute text-2xl text-center font-extrabold -top-1 left-1/2 -translate-1/2 bg-gradient-to-tr from-primary-100 to-accent text-dark p-3 rounded-xl">Backend</h3>
+                    <h3 class="absolute text-2xl text-center font-extrabold -top-1 left-1/2 -translate-1/2 bg-linear-to-tr from-primary-100 to-accent text-dark p-3 rounded-xl">Backend</h3>
                     <div class="grid grid-cols-2 md:grid-cols-3 pt-4">
                         <div class="flex flex-col items-center p-5 hover:scale-115 transition-transform duration-150 ease-in cursor-pointer">
                           <img class="w-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP icon"/>
@@ -288,22 +336,22 @@
 
 
         <section id="contact" class="mt-16 mx-3">
-            <h2 class="text-4xl font-bold">Contact Me</h2>
+            <h2 class="text-4xl md:text-5xl font-bold">Contact Me</h2>
             <p class="mt-4 text-lg">Feel free to reach out for collaborations or just a friendly hello!</p>
-            <form action="https://formspree.io/f/xdaaonbz" method="POST" class="mt-8 max-w-2xl mx-auto flex flex-col gap-6 bg-dark-700 p-8 rounded-2xl shadow-lg">
+            <form action="https://formspree.io/f/xdaaonbz" method="POST" class="mt-8 max-w-2xl mx-auto flex flex-col gap-6 bg-white/10 p-8 rounded-2xl shadow-lg">
                 <div>
                     <label for="name" class="block mb-2 font-bold">Name</label>
-                    <input type="text" id="name" name="name" required class="w-full px-4 py-2 rounded-lg bg-dark-500 border border-primary-300 focus:outline-none focus:ring-2 focus:ring-accent" />
+                    <input type="text" id="name" name="name" required class="w-full px-4 py-2 rounded-lg bg-dark-500 border border-white focus:outline-none focus:ring-2 focus:ring-accent" />
                 </div>
                 <div>
                     <label for="email" class="block mb-2 font-bold">Email</label>
-                    <input type="email" id="email" name="email" required class="w-full px-4 py-2 rounded-lg bg-dark-500 border border-primary-300 focus:outline-none focus:ring-2 focus:ring-accent" />
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-2 rounded-lg bg-dark-500 border border-white focus:outline-none focus:ring-2 focus:ring-accent" />
                 </div>
                 <div>
                     <label for="message" class="block mb-2 font-bold">Message</label>
-                    <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 rounded-lg bg-dark-500 border border-primary-300 focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
+                    <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 rounded-lg bg-dark-500 border border-white focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
                 </div>
-                <button type="submit" class="py-3 px-8 bg-primary-500 text-white font-bold rounded-xl hover:bg-primary-600 transition-colors">Send Message</button>
+                <button type="submit" class="py-3 px-8 bg-accent-dark text-white font-bold rounded-xl hover:bg-primary-600 transition-colors">Send Message</button>
             </form>
         </section>
     </main>

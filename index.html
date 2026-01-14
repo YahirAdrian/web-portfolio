@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yahir Adrian | Web Developer</title>
+    <meta name="description" content="Yahir Ortiz's portfolio. Web developer specializing in React JS and PHP Laravel. Explore projects, skills, and contact information." />
+    <meta name="keywords" content="web developer, React Js, PHP, Laravel, Yahir Ortiz" />
+    <title>Yahir Ortiz | Web Developer</title>
     <link rel="icon" type="image/x-icon" href="assets/icons/logo/icon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +16,9 @@
 <body class="bg-linear-to-br from-primary-700 to-primary-700/90">
     <header class="flex flex-col items-center justify-center min-h-screen">
 
-        <nav class="fixed w-full top-0 left-0 flex justify-between bg-primary-500 z-2 shadow-md shadow-black/50">
+        <nav class="fixed w-full top-0 left-0 flex justify-between bg-primary-500 z-4 shadow-md shadow-black/50">
             <div class="flex items-center p-4">
-                <img src="assets/icons/logo/icon.png" alt="Yahir Adrian logo" width="36"/>
+                <img src="assets/icons/logo/icon.png" alt="Yahir Ortiz logo" width="36"/>
                 <h1 class="hidden sm:block text-2xl ms-2 font-bold">
                     <a href="#">Yahir Ortiz</a>
                 </h1>
@@ -64,63 +66,74 @@
 
         <div class="flex flex-col justify-center items-center">
 
-            <h1 class="text-5xl md:text-8xl font-bold text-shadow-lg text-shadow-black/70">Yahir Ortiz</h1>
-            <p class="text-3xl my-4 mt-6"> Web developer </p>
+            <h1 class="text-5xl md:text-7xl lg:text-9xl uppercase font-bold text-shadow-lg text-shadow-black/70">Yahir Ortiz</h1>
+            <p class="text-3xl md:text-5xl lg:text-6xl my-4 mt-6 font-bold"> Web developer </p>
     
-            <p class="opacity-60 mt-4 text-center"> React • JavaScript • PHP • Laravel</p>
+            <p class="opacity-60 mt-4 text-center text-lg"> React JS • PHP Laravel Developer</p>
         </div>
 
-        <nav id="contact-icons" class="flex gap-4 mt-6">
-            <a href="https://github.com/YahirAdrian" title="Github"
-                class="text-white hover:text-sky-300 transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]"
-            >
-               <img src="/assets/icons/light/github.svg" alt="Github icon" width="32" aria-label="Go to Github profile"/>
-            </a>
-            <a href="https://www.linkedin.com/in/yahir-ortiz/" title="Linkedin"
-                class="text-white hover:text-sky-300 transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]"
-            >
-                <img src="assets/icons/light/linkedin.svg" alt="Linkedin icon" width="32" aria-label="Go to Linkedin pofile"/>
-            </a>
-           
-            <a
-                href="mailto:yahiradrian7948@gmail.com"
-                title="Email"
-                class="text-white transition-all duration-300
-                    hover:text-sky-300 hover:scale-110
-                    hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]"
-            >
-                <img src="assets/icons/light/mail.svg" alt="Mail icon" width="32" aria-label="Click to send email"/>
-            </a>
+        <nav id="contact-icons" >
+            <div class="flex gap-4 mt-6">
+
+                <a href="https://github.com/YahirAdrian" title="Github"
+                    class="flex flex-col items-center text-white hover:text-sky-300 transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]"
+                >
+                   <img src="/assets/icons/light/github.svg" alt="Github icon" width="48" aria-label="Go to Github profile"/>
+                   <span class="text-xs mt-1">Github</span>
+                </a>
+                <a href="https://www.linkedin.com/in/yahir-ortiz/" title="Linkedin"
+                    class="flex flex-col items-center text-white hover:text-sky-300 transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]"
+                >
+                    <img src="assets/icons/light/linkedin.svg" alt="Linkedin icon" width="48" aria-label="Go to Linkedin pofile"/>
+                    <span class="text-xs mt-1">Linkedin</span>
+                </a>
+               
+                <a
+                    href="mailto:yahiradrian7948@gmail.com"
+                    title="Email"
+                    class="flex flex-col items-center text-white transition-all duration-300
+                        hover:text-sky-300 hover:scale-110
+                        hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]"
+                >
+                    <img src="assets/icons/light/mail.svg" alt="Mail icon" width="48" aria-label="Click to send email"/>
+                    <span class="text-xs mt-1">Email</span>
+                </a>
+            </div>
 
 
+            <div class="mt-4 w-full flex justify-center">
+                <a href="cv.pdf" target="_blank"
+                    class="py-2 px-5 border-2 rounded-3xl font-bold text-lg transition-colors duration-300 hover:bg-accent/10 hover:border-accent hover:text-accent"
+                    >
+                    <span>Download CV</span>
+                </a>
+            </div>
+               
         </nav>
 
-        <div class="flex flex-col sm:flex-row justify-center items-center mt-6 gap-3">
-             <a href="#projects"
-             class="group py-3 px-3 border-4 rounded-3xl font-bold text-lg transition-colors duration-300 hover:bg-accent/10 hover:border-accent hover:text-accent"
-             >
-                <span>View Projects</span>
-            </a>
-            <a href="assets/cv.pdf"
-             class="group py-3 px-3 border-4 rounded-3xl font-bold text-lg transition-colors duration-300 hover:bg-accent/10 hover:border-accent hover:text-accent"
-             >
-                <span>Download CV</span>
-            </a>
-           
+        <div class="absolute bottom-4">
+            <span class="opacity-75">See my work below</span>
+            <div class="animated-arrows">
+                <div class="arrow"></div>
+                <div class="arrow"></div>
+                <div class="arrow"></div>
+            </div>
+            
         </div>
+
     </header>
     <main class="mx-3 sm:mx-8 md:mx-12 xl:mx-24">
         <section id="projects" class="mt-16 px-6">
-                <h2 class="text-4xl md:text-5xl font-bold">My projects</h2>
+                <h2 class="text-4xl md:text-5xl font-bold">🗂️My projects</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
                     <!-- Project 1 -->
-                    <div class="bg-dark rounded-xl shadow-gray-400/10 shadow-lg p-6 lg:p-10 flex flex-col">
+                    <div class="bg-dark rounded-xl shadow-gray-400/10 shadow-lg p-6 lg:p-10 flex flex-col hover:scale-105 transition-transform">
                         <div class="relative w-full mb-4 overflow-hidden rounded-lg">
                             <div class="swiper swiper1">
                                 <div class="swiper-wrapper aspect-video">
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/1.1 Fastie-Feasties.png" alt="Fastie Feasties project screenshot 1" class="object-cover w-full h-full"></div>
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/1.2 Fastie-Feasties.png" alt="Fastie Feasties project screenshot 2" class="object-cover w-full h-full"></div>
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/1.2 Fastie-Feasties.png" alt="Fastie Feasties project screenshot 2" class="object-cover w-full h-full"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/1.1-Fastie-Feasties.avif" alt="Fastie Feasties project screenshot 1" class="object-cover w-full h-full"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/1.2-Fastie-Feasties.avif" alt="Fastie Feasties project screenshot 2" class="object-cover w-full h-full"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/1.3-Fastie-Feasties.avif" alt="Fastie Feasties project screenshot 2" class="object-cover w-full h-full"></div>
                                 </div>
                                 <div class="swiper-pagination"></div>
                                 <div class="swiper-button-prev"></div>
@@ -149,13 +162,13 @@
                     </div>
 
                     <!-- Project 2 -->
-                    <div class="bg-dark shadow-gray-400/10 rounded-xl shadow-lg p-6 lg:p-10 flex flex-col">
+                    <div class="bg-dark shadow-gray-400/10 rounded-xl shadow-lg p-6 lg:p-10 flex flex-col hover:scale-105 transition-transform">
                         <div class="relative w-full mb-4 overflow-hidden rounded-lg">
                             <div class="swiper swiper2">
                                 <div class="swiper-wrapper aspect-video">
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/2.1- ClassPlanner.png" alt="ClassPlanner project screenshot 1" class="object-cover w-full h-full"></div>
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/2.2 ClassPlanner.png" alt="ClassPlanner project screenshot 2" class="object-cover w-full h-full"></div>
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/2.3 ClassPlanner.png" alt="ClassPlanner project screenshot 2" class="object-cover w-full h-full"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/2.1-ClassPlanner.avif" alt="ClassPlanner project screenshot 1" class="object-cover w-full h-full"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/2.2-ClassPlanner.avif" alt="ClassPlanner project screenshot 2" class="object-cover w-full h-full"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/2.3-ClassPlanner.avif" alt="ClassPlanner project screenshot 2" class="object-cover w-full h-full"></div>
                                 </div>
                                 <div class="swiper-pagination"></div>
                                 <div class="swiper-button-prev"></div>
@@ -182,13 +195,13 @@
                     </div>
 
                     <!-- Project 3-->
-                    <div class="bg-dark rounded-xl shadow-gray-400/10 shadow-lg p-6 flex flex-col">
+                    <div class="bg-dark rounded-xl shadow-gray-400/10 shadow-lg p-6 flex flex-col hover:scale-105 transition-transform">
                         <div class="relative w-full mb-4 overflow-hidden rounded-lg">
                             <div class="swiper swiper3">
                                 <div class="swiper-wrapper aspect-video">
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/3.1 SpaceEnglish.png" alt="Space English project screenshot 1" class="object-cover w-full h-full"></div>
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/3.2 SpaceEnglish.png" alt="Space English project screenshot 2" class="object-cover w-full h-full"></div>
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/3.3 SpaceEnglish.png" alt="Space English project screenshot 2" class="object-cover w-full h-full"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/3.1-SpaceEnglish.avif" alt="Space English project screenshot 1" class="object-cover w-full h-full"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/3.2-SpaceEnglish.avif" alt="Space English project screenshot 2" class="object-cover w-full h-full"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/3.3-SpaceEnglish.avif" alt="Space English project screenshot 2" class="object-cover w-full h-full"></div>
                                 </div>
                                 <div class="swiper-pagination"></div>
                                 <div class="swiper-button-prev"></div>
@@ -215,13 +228,13 @@
                         </div>
                     </div>
                     <!-- Project 4 -->
-                    <div class="bg-dark rounded-xl shadow-gray-400/10 shadow-lg p-6 lg:p-10 flex flex-col">
+                    <div class="bg-dark rounded-xl shadow-gray-400/10 shadow-lg p-6 lg:p-10 flex flex-col hover:scale-105 transition-transform">
                         <div class="relative w-full mb-4 overflow-hidden rounded-lg">
                             <div class="swiper swiper4">
                                 <div class="swiper-wrapper aspect-video">
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/4.1 Universal Movers.png" alt="Universal Movers project screenshot 1" class="object-cover w-full h-full"></div>
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/4.2 Universal Movers.png" alt="Universal Movers project screenshot 2" class="object-cover w-full h-full"></div>
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/4.3 Universal Movers.png" alt="Universal Movers project screenshot 2" class="object-cover w-full h-full"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/4.1-Universal-Movers.avif" alt="Universal Movers project screenshot 1" class="object-cover w-full h-full"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/4.2-Universal-Movers.avif" alt="Universal Movers project screenshot 2" class="object-cover w-full h-full"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/4.3-Universal-Movers.avif" alt="Universal Movers project screenshot 2" class="object-cover w-full h-full"></div>
                                 </div>
                                 <div class="swiper-pagination"></div>
                                 <div class="swiper-button-prev"></div>
@@ -251,16 +264,16 @@
 
         </section>
 
-        <section id="about" class="mt-16">
-            <h2 class="text-4xl md:text-5xl font-bold mt-16 px-8">About Me</h2>
+        <section id="about" class="flex flex-col justify-center mt-16 min-h-screen">
+            <h2 class="text-4xl md:text-5xl font-bold mt-16 px-8">👨‍💻About Me</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="flex items-center">
-                    <img src="assets/img/yahir.png" alt="Yahir Adrian's photo" class="w-72 h-72 mx-auto mt-8 rounded-full shadow-lg shadow-black/50"/>
+                    <img src="assets/img/yahir.png" alt="Yahir Ortiz's photo" class="w-72 h-72 mx-auto mt-8 rounded-full shadow-lg shadow-black/50"/>
                 </div> 
                 <div class="mx-auto mt-8 px-8 text-lg max-w-4xl">
-                    <p class="mb-4">Hello! I'm Yahir Adrian, a passionate Web Developer with a knack for creating dynamic and responsive web applications. With a strong foundation in both frontend and backend technologies, I enjoy bringing ideas to life through code.</p>
-                    <p class="mb-4">My journey into web development started with a curiosity for how websites work, which quickly turned into a passion for building them. Over the years, I've honed my skills in HTML, CSS, JavaScript, PHP, MySQL, and various frameworks like React and Laravel.</p>
+                    <p class="mb-4">Hello! I’m Yahir Ortiz, a passionate Web Developer with a strong foundation in Frontend and Backend technologies, creating dynamic and responsive web applications. </p>
+                    <p class="mb-4">I enjoy bringing projects and ideas back to life through code — the most interesting part of Web Development. I started my developer journey with HTML, CSS, and JavaScript. Then, I mastered React and Laravel to build full-stack web applications that bring complete solutions to the projects I create.</p>
                     <p>I'm always eager to take on new challenges and collaborate on exciting projects. Let's connect and create something amazing together!</p>
                 </div>
             </div>
@@ -268,11 +281,11 @@
 
 
         <section id="skills" class="mt-16 px-8">
-            <h2 class="text-4xl md:text-5xl font-bold">My Tech Skills</h2>
+            <h2 class="text-4xl md:text-5xl font-bold">🛠️My Tech Skills</h2>
     
             <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 md:mx-8 justify-center">
-                <article id="frontend" class="p-6 relative border border-accent rounded-4xl bg-white/10 backdrop-blur-2xl">
-                    <h3 class="absolute text-2xl text-center font-extrabold -top-1 left-1/2 -translate-1/2 bg-linear-to-tr from-primary-100 to-accent text-dark p-3 rounded-xl">Frontend</h3>
+                <article id="frontend" class="p-6 relative border border-accent rounded-4xl bg-primary-500/60">
+                    <h3 class="absolute text-2xl text-center font-extrabold -top-1 left-1/2 -translate-1/2 bg-accent-dark text-white p-3 rounded-xl">Frontend</h3>
                     <div class="grid grid-cols-2 md:grid-cols-3 pt-4">
                         <div class="flex flex-col items-center p-5 hover:scale-115 transition-transform duration-150 ease-in cursor-pointer">
                           <img class="w-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML icon"/>
@@ -304,8 +317,8 @@
                         </div>
                     </div>
                 </article>
-                <article id="backend" class="mt-16 sm:mt-0 p-6 relative border border-accent rounded-4xl bg-white/10 backdrop-blur-2xl">
-                    <h3 class="absolute text-2xl text-center font-extrabold -top-1 left-1/2 -translate-1/2 bg-linear-to-tr from-primary-100 to-accent text-dark p-3 rounded-xl">Backend</h3>
+                <article id="backend" class="mt-16 sm:mt-0 p-6 relative border border-accent rounded-4xl bg-primary-500/60">
+                    <h3 class="absolute text-2xl text-center font-extrabold -top-1 left-1/2 -translate-1/2 bg-accent-dark text-white p-3 rounded-xl">Backend</h3>
                     <div class="grid grid-cols-2 md:grid-cols-3 pt-4">
                         <div class="flex flex-col items-center p-5 hover:scale-115 transition-transform duration-150 ease-in cursor-pointer">
                           <img class="w-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP icon"/>
@@ -336,7 +349,7 @@
 
 
         <section id="contact" class="mt-16 mx-3">
-            <h2 class="text-4xl md:text-5xl font-bold">Contact Me</h2>
+            <h2 class="text-4xl md:text-5xl font-bold">☕Contact Me</h2>
             <p class="mt-4 text-lg">Feel free to reach out for collaborations or just a friendly hello!</p>
             <form action="https://formspree.io/f/xdaaonbz" method="POST" class="mt-8 max-w-2xl mx-auto flex flex-col gap-6 bg-white/10 p-8 rounded-2xl shadow-lg">
                 <div>
@@ -359,7 +372,7 @@
     <footer>
         <div class="bg-primary-500 text-center py-6 mt-16 border-t border-dark-500 text-gray-400">
             <p>Developed with ♥️</p>
-            <p> &copy; 2026 Yahir Adrian. All rights reserved.</p>
+            <p> &copy; 2026 Yahir Ortiz. All rights reserved.</p>
            
         </div>
     </footer>

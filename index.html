@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Don't forget to translate header content -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Yahir Ortiz's portfolio. Web developer specializing in React JS and PHP Laravel. Explore projects, skills, and contact information." />
     <meta name="keywords" content="web developer, React Js, PHP, Laravel, Yahir Ortiz" />
     <title>Yahir Ortiz | Web Developer</title>
+     <link rel="alternate" hreflang="en" href="https://yahirortiz.dev">
+    <link rel="alternate" hreflang="es" href="https://yahirortiz.dev?lang=es">
+    <link rel="alternate" hreflang="fr" href="https://yahirortiz.dev?lang=fr">
+    <link rel="canonical" href="https://yahirortiz.dev">
     <link rel="icon" type="image/x-icon" href="assets/icons/logo/icon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="dist/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="src/js/language.js"></script>
 </head>
 
 <body class="bg-linear-to-br from-dark to-accent-dark/70">
@@ -28,37 +34,44 @@
                 <div class="flex items-center font-bold h-full">
                     <ul id="nav-links" class="absolute sm:static h-0 sm:h-auto top-16 right-0 flex flex-col sm:flex-row gap-0 sm:gap-6 w-full overflow-hidden sm:w-auto text-lg text-center sm:p-0 transition-all duration-300">
                         <li class="bg-primary-700 hover:bg-accent/50 rounded-none sm:rounded-md px-3 py-2">
-                            <a href="#projects">Projects</a>
+                            <a href="#projects" data-i18n="nav.projects"></a>
                         </li>
                         <li class="bg-primary-700 hover:bg-accent/50 rounded-none sm:rounded-md px-3 py-2">
-                            <a href="#about">About</a>
+                            <a href="#about" data-i18n="nav.about"></a>
                         </li>
                         <li class="bg-primary-700 hover:bg-accent/50 rounded-none sm:rounded-md px-3 py-2">
-                            <a href="#contact">Contact</a>
+                            <a href="#skills" data-i18n="nav.skills"></a>
+                        </li>
+                        <li class="bg-primary-700 hover:bg-accent/50 rounded-none sm:rounded-md px-3 py-2">
+                            <a href="#contact" data-i18n="nav.contact"></a>
                         </li>
                     </ul>
 
                 </div>
 
-                <div id="custom-language-selector" class="ms-2 relative" title="Switch language">
+                <div id="custom-language-selector" class="ms-2 relative" data-i18n-attr="title:nav.lang.switchTitle">
                     <button type="button" id="selected-language" class="flex items-center gap-2 cursor-pointer px-2 py-1 rounded transition min-w-15">
-                        <img src="assets/icons/lang/en.svg" alt="English icon" width="24" class="inline"/>
+                        <img src="assets/icons/lang/en.svg" width="24" class="inline" data-i18n-attr="alt:nav.lang.current_langAlt"/>
                         <span class="font-bold">EN</span>
                         <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
                     <ul id="language-options" class="absolute left-0 mt-1 w-full bg-primary-300 rounded shadow-lg z-10 hidden">
                         <li class="flex items-center gap-2 px-2 py-1 cursor-pointer hover:bg-primary-100" data-lang="en">
-                            <img src="assets/icons/lang/en.svg" alt="English icon" width="24" class="inline"/>
+                            <img src="assets/icons/lang/en.svg" width="24" class="inline" data-i18n-attr="alt:nav.lang.enAlt"/>
                             <span class="font-bold">EN</span>
                         </li>
                         <li class="flex items-center gap-2 px-2 py-1 cursor-pointer hover:bg-primary-100" data-lang="es">
-                            <img src="assets/icons/lang/es.svg" alt="Spanish icon" width="24" class="inline"/>
+                            <img src="assets/icons/lang/es.svg" width="24" class="inline" data-i18n-attr="alt:nav.lang.esAlt"/>
                             <span class="font-bold">ES</span>
+                        </li>
+                        <li class="flex items-center gap-2 px-2 py-1 cursor-pointer hover:bg-primary-100" data-lang="es">
+                            <img src="assets/icons/lang/fr.svg" width="24" class="inline" data-i18n-attr="alt:nav.lang.frAlt"/>
+                            <span class="font-bold">FR</span>
                         </li>
                     </ul>
                 </div>
 
-                <button  id="burger-menu"class="sm:hidden mx-3 text-white p-2 cursor-pointer" aria-label="Click to open menu">
+                <button type="button" id="burger-menu"class="sm:hidden mx-3 text-white p-2 cursor-pointer"  data-i18n-attr="aria-label:nav.burger_menuAriaLabel">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                 </button>
             </div>
@@ -75,37 +88,37 @@
             </span>
             </h1>
             <div class="typewriter">
-                <p class="text-3xl md:text-5xl lg:text-6xl my-4 mt-8 font-bold"> Web developer </p>
+                <p class="text-3xl md:text-5xl lg:text-6xl my-4 mt-8 font-bold" data-i18n="hero.title"></p>
             </div>
     
-            <p class="opacity-60 mt-4 text-center text-lg"> React JS • PHP Laravel Developer</p>
+            <p class="opacity-60 mt-4 text-center text-lg" data-i18n="hero.subtitle"></p>
         </div>
 
         <nav id="contact-icons" >
             <div class="flex gap-4 mt-6">
-
-                <a href="https://github.com/YahirAdrian" title="Github"
+<!-- AQUI ME QUEDÉ -->
+                <a href="https://github.com/YahirAdrian" data-i18n-attr="title:social_links.githubTitle; aria-label:social_links.githubAriaLabel"
                     class="flex flex-col items-center text-white hover:text-sky-300 transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]"
                 >
-                   <img src="/assets/icons/light/github.svg" alt="Github icon" width="48" aria-label="Go to Github profile"/>
+                   <img src="/assets/icons/light/github.svg" width="48" data-i18n-attr="alt:social_links.github_iconAlt"/>
                    <span class="text-xs mt-1">Github</span>
                 </a>
-                <a href="https://www.linkedin.com/in/yahir-ortiz/" title="Linkedin"
+                <a href="https://www.linkedin.com/in/yahir-ortiz/" data-i18n-attr="title:social_links.linkedinTitle; aria-label:social_links.linkedinAriaLabel"
                     class="flex flex-col items-center text-white hover:text-sky-300 transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]"
                 >
-                    <img src="assets/icons/light/linkedin.svg" alt="Linkedin icon" width="48" aria-label="Go to Linkedin pofile"/>
+                    <img src="assets/icons/light/linkedin.svg" width="48" data-i18n-attr="alt:social_links.linkedin_iconAlt"/>
                     <span class="text-xs mt-1">Linkedin</span>
                 </a>
                
                 <a
                     href="mailto:yahiradrian7948@gmail.com"
-                    title="Email"
+                    data-i18n-attr="title:social_links.emailTitle; aria-label:social_links.emailAriaLabel"
                     class="flex flex-col items-center text-white transition-all duration-300
                         hover:text-sky-300 hover:scale-110
                         hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]"
                 >
-                    <img src="assets/icons/light/mail.svg" alt="Mail icon" width="48" aria-label="Click to send email"/>
-                    <span class="text-xs mt-1">Email</span>
+                    <img src="assets/icons/light/mail.svg" width="48" data-i18n-attr="alt:social_links.email_iconAlt"/>
+                    <span class="text-xs mt-1" data-i18n="social_links.emailTitle"></span>
                 </a>
             </div>
 
@@ -114,14 +127,14 @@
                 <a href="YahirOrtizCV.pdf" target="_blank"
                     class="py-2 px-5 border-2 rounded-3xl font-bold text-lg transition-colors duration-300 hover:bg-accent/10 hover:border-accent hover:text-accent"
                     >
-                    <span>Download CV</span>
+                    <span data-i18n="social_links.downloadCV"></span>
                 </a>
             </div>
                
         </nav>
 
         <div class="absolute bottom-4">
-            <span class="opacity-75">See my work below</span>
+            <span class="opacity-75" data-i18n="hero.seeWork"></span>
             <div class="animated-arrows">
                 <div class="arrow"></div>
                 <div class="arrow"></div>
@@ -133,24 +146,24 @@
     </header>
     <main class="mx-3 sm:mx-8 md:mx-12 xl:mx-24">
         <section id="projects" class="mt-16 px-6">
-                <h2 class="text-4xl md:text-5xl font-bold">🗂️&nbsp;My projects</h2>
+                <h2 class="text-4xl md:text-5xl font-bold" data-i18n="projects.title"></h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
                     <!-- Project 1 -->
                     <div class="bg-dark rounded-xl shadow-gray-400/10 shadow-lg p-6 lg:p-10 flex flex-col hover:scale-105 transition-transform">
                         <div class="relative w-full mb-4 overflow-hidden rounded-lg">
                             <div class="swiper swiper1">
                                 <div class="swiper-wrapper aspect-video">
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/1.1-Fastie-Feasties.avif" alt="Fastie Feasties project screenshot 1" class="object-cover w-full h-full"></div>
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/1.2-Fastie-Feasties.avif" alt="Fastie Feasties project screenshot 2" class="object-cover w-full h-full"></div>
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/1.3-Fastie-Feasties.avif" alt="Fastie Feasties project screenshot 2" class="object-cover w-full h-full"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/1.1-Fastie-Feasties.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p1.picture_1Alt"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/1.2-Fastie-Feasties.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p1.picture_2Alt"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/1.3-Fastie-Feasties.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p1.picture_3Alt"></div>
                                 </div>
                                 <div class="swiper-pagination"></div>
                                 <div class="swiper-button-prev"></div>
                                 <div class="swiper-button-next"></div>
                             </div>
                         </div>
-                        <h3 class="text-2xl md:text-3xl font-semibold mb-2">Fastie Feastie's</h3>
-                        <p class="mb-4 text-gray-300 md:text-xl">An interactive digital menu for a fast-food restaurant to improve customer ordering experience. </p>
+                        <h3 class="text-2xl md:text-3xl font-semibold mb-2" data-i18n="projects.p1.title"></h3>
+                        <p class="mb-4 text-gray-300 md:text-xl" data-i18n="projects.p1.description"></p>
                         <div class="tech-tags mb-4">
                             <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">React</span>
                             <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">TypeScript</span>
@@ -160,12 +173,12 @@
                         </div>
                         <div class="mt-auto flex gap-3">
                             <a href="https://fastie-feasties-react.vercel.app/" target="_blank" class="py-2 px-4 bg-accent text-white rounded-lg font-bold hover:bg-primary-600 transition">
-                                <img src="assets/icons/light/external-link.svg" alt="External link icon" width="16" class="inline mr-2"/>
-                                <span>Preview</span>
+                                <img src="assets/icons/light/external-link.svg" width="16" class="inline mr-2" data-i18n-attr="alt:projects.preview_iconAlt"/>
+                                <span data-i18n="projects.preview"></span>
                             </a>
                             <a href="https://github.com/YahirAdrian/fastie-feasties-react" target="_blank" class="py-2 px-4 border border-gray- bg-primary-700 rounded-lg font-bold hover:bg-primary-500 hover:text-white transition">
-                                <img src="assets/icons/light/github.svg" alt="Github icon" width="16" class="inline mr-2">
-                                <span>Code</span>
+                                <img src="assets/icons/light/github.svg" width="16" class="inline mr-2" data-i18n-attr="alt:projects.code_iconAlt">
+                                <span data-i18n="projects.code"></span>
                             </a>
                         </div>
                     </div>
@@ -175,17 +188,17 @@
                         <div class="relative w-full mb-4 overflow-hidden rounded-lg">
                             <div class="swiper swiper2">
                                 <div class="swiper-wrapper aspect-video">
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/2.1-ClassPlanner.avif" alt="ClassPlanner project screenshot 1" class="object-cover w-full h-full"></div>
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/2.2-ClassPlanner.avif" alt="ClassPlanner project screenshot 2" class="object-cover w-full h-full"></div>
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/2.3-ClassPlanner.avif" alt="ClassPlanner project screenshot 2" class="object-cover w-full h-full"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/2.1-ClassPlanner.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p2.picture_1Alt"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/2.2-ClassPlanner.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p2.picture_2Alt"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/2.3-ClassPlanner.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p2.picture_3Alt"></div>
                                 </div>
                                 <div class="swiper-pagination"></div>
                                 <div class="swiper-button-prev"></div>
                                 <div class="swiper-button-next"></div>
                             </div>
                         </div>
-                        <h3 class="text-2xl md:text-3xl font-semibold mb-2">Class Planner</h3>
-                        <p class="mb-4 text-gray-300 md:text-xl">A student planner application to organize class agenda by subject, tasks and notes.</p>
+                        <h3 class="text-2xl md:text-3xl font-semibold mb-2" data-i18n="projects.p2.title"></h3>
+                        <p class="mb-4 text-gray-300 md:text-xl" data-i18n="projects.p2.description"></p>
                         <div class="tech-tags mb-4">
                             <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">React</span>
                             <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">JavaScript</span>
@@ -193,12 +206,12 @@
                         </div>
                         <div class="mt-auto flex gap-3">
                             <a href="https://class-planner.netlify.app/" target="_blank" class="py-2 px-4 bg-accent text-white rounded-lg font-bold hover:bg-primary-600 transition">
-                                <img src="assets/icons/light/external-link.svg" alt="External link icon" width="16" class="inline mr-2"/>
-                                <span>Preview</span>
+                                <img src="assets/icons/light/external-link.svg" width="16" class="inline mr-2" data-i18n-attr="alt:projects.preview_iconAlt"/>
+                                <span data-i18n="projects.preview"></span>
                             </a>
                             <a href="https://github.com/YahirAdrian/class-planner" target="_blank" class="py-2 px-4 border border-gray- bg-primary-700 rounded-lg font-bold hover:bg-primary-500 hover:text-white transition">
-                                <img src="assets/icons/light/github.svg" alt="Github icon" width="16" class="inline mr-2">
-                                <span>Code</span>
+                                <img src="assets/icons/light/github.svg" width="16" class="inline mr-2" data-i18n-attr="alt:projects.code_iconAlt" />
+                                <span data-i18n="projects.code"></span>
                             </a>
                         </div>
                     </div>
@@ -227,12 +240,12 @@
                         </div>
                         <div class="mt-auto flex gap-3">
                             <a href="https://space-english.netlify.app/" target="_blank" class="py-2 px-4 bg-accent text-white rounded-lg font-bold hover:bg-primary-600 transition">
-                                <img src="assets/icons/light/external-link.svg" alt="External link icon" width="16" class="inline mr-2"/>
-                                <span>Preview</span>
+                                <img src="assets/icons/light/external-link.svg" width="16" class="inline mr-2" data-i18n-attr="alt:projects.preview_iconAlt"/>
+                                <span data-i18n="projects.preview"></span>
                             </a>
                             <a href="https://github.com/YahirAdrian/spaceenglish" target="_blank" class="py-2 px-4 border border-gray- bg-primary-700 rounded-lg font-bold hover:bg-primary-500 hover:text-white transition">
-                                <img src="assets/icons/light/github.svg" alt="Github icon" width="16" class="inline mr-2">
-                                <span>Code</span>
+                                <img src="assets/icons/light/github.svg" width="16" class="inline mr-2" data-i18n-attr="alt:projects.code_iconAlt" />
+                                <span data-i18n="projects.code"></span>
                             </a>
                         </div>
                     </div>
@@ -260,12 +273,12 @@
                         </div>
                         <div class="mt-auto flex gap-3">
                             <a href="https://universal-movers-template.netlify.app/" target="_blank" class="py-2 px-4 bg-accent text-white rounded-lg font-bold hover:bg-primary-600 transition">
-                                <img src="assets/icons/light/external-link.svg" alt="External link icon" width="16" class="inline mr-2"/>
-                                <span>Preview</span>
+                                <img src="assets/icons/light/external-link.svg" width="16" class="inline mr-2" data-i18n-attr="alt:projects.preview_iconAlt"/>
+                                <span data-i18n="projects.preview"></span>
                             </a>
                             <a href="https://github.com/YahirAdrian/universal-movers" target="_blank" class="py-2 px-4 border border-gray- bg-primary-700 rounded-lg font-bold hover:bg-primary-500 hover:text-white transition">
-                                <img src="assets/icons/light/github.svg" alt="Github icon" width="16" class="inline mr-2">
-                                <span>Code</span>
+                                <img src="assets/icons/light/github.svg" width="16" class="inline mr-2" data-i18n-attr="alt:projects.code_iconAlt" />
+                                <span data-i18n="projects.code"></span>
                             </a>
                         </div>
                     </div>
@@ -274,11 +287,11 @@
         </section>
 
         <section id="about" class="flex flex-col justify-center mt-16 min-h-screen">
-            <h2 class="text-4xl md:text-5xl font-bold mt-16 px-8">👨‍💻&nbsp;About Me</h2>
+            <h2 class="text-4xl md:text-5xl font-bold mt-16 px-8" data-i18n="about.title"></h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="flex items-center">
-                    <img src="assets/img/yahir.png" alt="Yahir Ortiz's photo" class="w-full max-w-96 mx-auto mt-8 rounded-full border-5 border-accent shadow-white/20 shadow-2xl"/>
+                    <img src="assets/img/yahir.png" class="w-full max-w-96 mx-auto mt-8 rounded-full border-5 border-accent shadow-white/20 shadow-2xl" data-i18n-attr="alt:about.picture_meAlt"/>
                 </div> 
                 <div class="mx-auto mt-8 px-0 text-lg max-w-4xl">
                     <div class="bg-black rounded-xl shadow-lg overflow-hidden border border-gray-700">
@@ -286,12 +299,12 @@
                             <span class="w-3 h-3 rounded-full bg-red-500 mr-2"></span>
                             <span class="w-3 h-3 rounded-full bg-yellow-400 mr-2"></span>
                             <span class="w-3 h-3 rounded-full bg-green-500"></span>
-                            <span class="ml-4 text-gray-400 text-sm font-mono">yahirortiz@about:~</span>
+                            <span class="ml-4 text-gray-400 text-sm font-mono" data-i18n="about.window_title"></span>
                         </div>
                         <div class="px-6 py-6 font-mono text-green-200 text-base leading-relaxed">
-                            <p class="mb-4"><span class="text-accent">yahirortiz@about:~$</span> Hello! I’m Yahir Ortiz, a passionate Web Developer with a strong foundation in Frontend and Backend technologies, creating dynamic and responsive web applications.</p>
-                            <p class="mb-4"><span class="text-accent">yahirortiz@about:~$</span> I enjoy bringing projects and ideas back to life through code — the most interesting part of Web Development. I started my developer journey with HTML, CSS, and JavaScript. Then, I mastered React and Laravel to build full-stack web applications that bring complete solutions to the projects I create.</p>
-                            <p><span class="text-accent">yahirortiz@about:~$</span> I'm always eager to take on new challenges and collaborate on exciting projects. Let's connect and create something amazing together!</p>
+                            <p class="mb-4"><span class="text-accent" data-i18n="about.line_before"></span><span>&nbsp;</span><span data-i18n="about.line_1"></span></p>
+                            <p class="mb-4"><span class="text-accent" data-i18n="about.line_before"></span><span>&nbsp;</span><span data-i18n="about.line_2"></span></p>
+                            <p><span class="text-accent" data-i18n="about.line_before"></span><span>&nbsp;</span><span data-i18n="about.line_3"></span></p>
                         </div>
                     </div>
                 </div>
@@ -300,7 +313,7 @@
 
 
         <section id="skills" class="mt-16 px-8">
-            <h2 class="text-4xl md:text-5xl font-bold">🛠️&nbsp;My Tech Skills</h2>
+            <h2 class="text-4xl md:text-5xl font-bold" data-i18n="skills.title"></h2>
     
             <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 md:mx-8 justify-center">
                 <article id="frontend" class="p-6 relative border border-accent rounded-4xl bg-primary-500/60">
@@ -368,30 +381,34 @@
 
 
         <section id="contact" class="mt-16 mx-3">
-            <h2 class="text-4xl md:text-5xl font-bold">☕&nbsp;Contact Me</h2>
-            <p class="mt-4 text-lg">Feel free to reach out for collaborations or just a friendly hello!</p>
+            <h2 class="text-4xl md:text-5xl font-bold" data-i18n="contact.title"></h2>
+            <p class="mt-4 text-lg" data-i18n="contact.description"></p>
             <form action="https://formspree.io/f/xdaaonbz" method="POST" class="mt-8 max-w-2xl mx-auto flex flex-col gap-6 bg-white/10 p-8 rounded-2xl shadow-lg">
                 <div>
-                    <label for="name" class="block mb-2 font-bold">Name</label>
+                    <label for="name" class="block mb-2 font-bold" data-i18n="contact.name_label"></label>
                     <input type="text" id="name" name="name" required class="w-full px-4 py-2 rounded-lg bg-dark-500 border border-white focus:outline-none focus:ring-2 focus:ring-accent" />
                 </div>
                 <div>
-                    <label for="email" class="block mb-2 font-bold">Email</label>
+                    <label for="email" class="block mb-2 font-bold" data-i18n="contact.email_label"></label>
                     <input type="email" id="email" name="email" required class="w-full px-4 py-2 rounded-lg bg-dark-500 border border-white focus:outline-none focus:ring-2 focus:ring-accent" />
                 </div>
                 <div>
-                    <label for="message" class="block mb-2 font-bold">Message</label>
+                    <label for="message" class="block mb-2 font-bold" data-i18n="contact.message_label"></label>
                     <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 rounded-lg bg-dark-500 border border-white focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
                 </div>
-                <button type="submit" class="py-3 px-8 bg-accent-dark/70 hover:bg-accent-dark  text-white font-bold rounded-xl transition-colors cursor-pointer">Send Message</button>
+                <button type="submit" class="py-3 px-8 bg-accent-dark/70 hover:bg-accent-dark  text-white font-bold rounded-xl transition-colors cursor-pointer" data-i18n="contact.send_label"></button>
             </form>
         </section>
     </main>
 
     <footer>
         <div class="bg-primary-700 text-center py-6 mt-16 border-t border-dark-500">
-            <p>Developed with ♥️</p>
-            <p> &copy; 2026 Yahir Ortiz. All rights reserved.</p>
+            <p data-i18n="footer.developed"></p>
+            <p >
+                <span>&copy;</span>
+                <span id="copyright_year"></span>
+                <span data-i18n="footer.copyright"></span>
+            </p>
            
         </div>
     </footer>
@@ -447,6 +464,10 @@
     burgerMenu.addEventListener('click', () => {
         navLinks.classList.toggle('h-0');
     });
+
+    //Copyright year
+    const copyright = document.querySelector('#copyright_year')
+    copyright.textContent = new Date().getFullYear()
     </script>
 </body>
 </html>

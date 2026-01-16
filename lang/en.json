@@ -1,0 +1,101 @@
+{
+    "nav": {
+        "projects": "Projects",
+        "about": "About",
+        "skills": "Skills",
+        "contact": "Contact",
+        "burger_menuAriaLabel": "Click to open menu",
+        "lang":{
+            "switchTitle": "Switch language",
+            "current_langAlt": "English",
+            "enAlt": "English icon",
+            "esAlt": "Spanish icon",
+            "frAlt": "French icon"
+        }
+    },
+    "hero":{
+        "title": "Web developer",
+        "subtitle": "React JS • PHP Laravel Developer",
+        "seeWork": "See my work below"
+    },
+
+    "social_links":{
+        "githubTitle": "Github",
+        "githubAriaLabel": "Go to Github profile",
+        "github_iconAlt": "Github icon",
+        
+        "linkedinTitle": "Linkedin",
+        "linkedinAriaLabel": "Go to Linkedin profile",
+        "linkedin_iconAlt": "Linkedin icon",
+
+        "emailTitle": "Email",
+        "emailAriaLabel": "Click to copy Email",
+        "email_iconAlt": "Email icon",
+
+        "downloadCV": "Download CV"
+    },
+
+    "projects": {
+        "title": "🗂️ My projects",
+        "preview": "Preview",
+        "preview_iconAlt": "Preview icon",
+        "code": "Code",
+        "code_iconAlt": "Github icon",
+        "p1": {
+            "title": "Fastie Feastie's",
+            "description": "An interactive digital menu for a fast-food restaurant to improve customer ordering experience.",
+            "picture_1Alt": "Fastie Feastie's screenshot 1",
+            "picture_2Alt": "Fastie Feastie's screenshot 2",
+            "picture_3Alt": "Fastie Feastie's screenshot 3"
+        },
+        "p2": {
+            "title": "Class Planner",
+            "description": "A student planner application to organize class agenda by subject, tasks and notes.",
+            "picture_1Alt": "Class Planner screenshot 1",
+            "picture_2Alt": "Class Planner screenshot 2",
+            "picture_3Alt": "Class Planner screenshot 3"
+        },
+        "p3": {
+            "title": "Space English",
+            "description": "English leaarning website to practice vocabulary and grammar through interactive activities.",
+            "picture_1Alt": "Space English screenshot 1",
+            "picture_2Alt": "Space English screenshot 2",
+            "picture_3Alt": "Space English screenshot 3"
+        },
+        "p4": {
+            "title": "Universal Movers",
+            "description": "Moving services landing page, using pixel-perfect conversion from Figma design.",
+            "picture_1Alt": "Universal Movers screenshot 1",
+            "picture_2Alt": "Universal Movers screenshot 2",
+            "picture_3Alt": "Universal Movers screenshot 3"
+        }
+    },
+
+    "about":{
+        "title": "👨‍💻 About Me",
+        "picture_meAlt": "Yahir Ortiz's photo",
+        "window_title": "yahirortiz@about:~",
+        "line_before": "yahirortiz@about:~$:",
+        "line_1": "Hello! I’m Yahir Ortiz, a passionate Web Developer with a strong foundation in Frontend and Backend technologies, creating dynamic and responsive web applications.",
+        "line_2": "I enjoy bringing projects and ideas back to life through code — the most interesting part of Web Development. I started my developer journey with HTML, CSS, and JavaScript. Then, I mastered React and Laravel to build full-stack web applications that bring complete solutions to the projects I create.",
+        "line_3": "I'm always eager to take on new challenges and collaborate on exciting projects. Let's connect and create something amazing together!"
+    },
+
+    "skills": {
+        "title": "🛠️ My Skills"
+    },
+
+    "contact":{
+        "title": "☕ Contact Me",
+        "description": "Feel free to reach out for collaborations or just a friendly hello!",
+        "name_label": "Name:",
+        "email_label": "Email:",
+        "message_label": "Message:",
+        "send_label": "Send Message"
+    },
+
+    "footer": {
+        "developed": "Developed with ♥️",
+        "copyright": "Yahir Ortiz. All rights reserved."
+    }
+}

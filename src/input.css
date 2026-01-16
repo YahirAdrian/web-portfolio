@@ -16,7 +16,8 @@
 
 body{
     font-family: "Rubik", sans-serif;
-    color: var(--color-light)
+    color: var(--color-light);
+    background: linear-gradient(to bottom right, #27405a, #020c16)
 }
 
 html {

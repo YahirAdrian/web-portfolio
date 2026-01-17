@@ -50,14 +50,14 @@
         },
         "p2": {
             "title": "Class Planner",
-            "description": "A student planner application to organize class agenda by subject, tasks and notes.",
+            "description": "A student planner application to organize schedule, tasks and notes by subject.",
             "picture_1Alt": "Class Planner screenshot 1",
             "picture_2Alt": "Class Planner screenshot 2",
             "picture_3Alt": "Class Planner screenshot 3"
         },
         "p3": {
             "title": "Space English",
-            "description": "English leaarning website to practice vocabulary and grammar through interactive activities.",
+            "description": "English learning website to practice vocabulary and grammar through interactive activities.",
             "picture_1Alt": "Space English screenshot 1",
             "picture_2Alt": "Space English screenshot 2",
             "picture_3Alt": "Space English screenshot 3"

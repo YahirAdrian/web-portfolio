@@ -70,6 +70,8 @@ async function loadLanguage(lang) {
   }
 }
 
+
+
 (function initI18n() {
   const lang =
     getQueryLang() ||
@@ -78,3 +80,68 @@ async function loadLanguage(lang) {
 
   loadLanguage(lang);
 })();
+
+
+       
+       
+ // Custom language selector logic
+    (function() {
+      const selector = document.getElementById('custom-language-selector');
+      if (!selector) return;
+      const button = selector.querySelector('#selected-language');
+      const options = selector.querySelector('#language-options');
+      const optionItems = options.querySelectorAll('li');
+
+      // Helper to update button UI
+      function updateButtonUI(selectedItem) {
+        const img = selectedItem.querySelector('img').cloneNode(true);
+        const span = selectedItem.querySelector('span').cloneNode(true);
+        button.innerHTML = '';
+        button.appendChild(img);
+        button.appendChild(span);
+        // Add dropdown arrow
+        const arrow = document.createElement('svg');
+        arrow.className = 'ml-1 w-4 h-4';
+        arrow.setAttribute('fill', 'none');
+        arrow.setAttribute('stroke', 'currentColor');
+        arrow.setAttribute('viewBox', '0 0 24 24');
+        arrow.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>';
+        button.appendChild(arrow);
+      }
+
+      // Toggle dropdown
+      button.addEventListener('click', function(e) {
+        e.stopPropagation();
+        options.classList.toggle('hidden');
+      });
+
+      // Select language
+      optionItems.forEach(item => {
+        item.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const languageSelected = item.dataset.lang;
+          loadLanguage(languageSelected);
+
+          updateButtonUI(item);
+          options.classList.add('hidden');
+        });
+      });
+
+      // On page load, update selector based on query param or localStorage
+      function getInitialLang() {
+        const params = new URLSearchParams(window.location.search);
+        return params.get('lang') ||
+          localStorage.getItem('lang') ||
+          DEFAULT_LANG;
+      }
+
+      const initialLang = getInitialLang();
+      const initialItem = Array.from(optionItems).find(
+        item => item.dataset.lang === initialLang
+      );
+      if (initialItem) {
+        updateButtonUI(initialItem);
+      }
+    })();
+
+    

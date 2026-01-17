@@ -16,7 +16,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="dist/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <script src="src/js/language.js"></script>
 </head>
 
 <body class="bg-linear-to-br from-dark to-accent-dark/70">
@@ -64,7 +63,7 @@
                             <img src="assets/icons/lang/es.svg" width="24" class="inline" data-i18n-attr="alt:nav.lang.esAlt"/>
                             <span class="font-bold">ES</span>
                         </li>
-                        <li class="flex items-center gap-2 px-2 py-1 cursor-pointer hover:bg-primary-100" data-lang="es">
+                        <li class="flex items-center gap-2 px-2 py-1 cursor-pointer hover:bg-primary-100" data-lang="fr">
                             <img src="assets/icons/lang/fr.svg" width="24" class="inline" data-i18n-attr="alt:nav.lang.frAlt"/>
                             <span class="font-bold">FR</span>
                         </li>
@@ -96,7 +95,6 @@
 
         <nav id="contact-icons" >
             <div class="flex gap-4 mt-6">
-<!-- AQUI ME QUEDÉ -->
                 <a href="https://github.com/YahirAdrian" data-i18n-attr="title:social_links.githubTitle; aria-label:social_links.githubAriaLabel"
                     class="flex flex-col items-center text-white hover:text-sky-300 transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]"
                 >
@@ -414,60 +412,26 @@
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="src/js/language.js"></script>
     <script>
         new Swiper('.swiper1', { loop: true, pagination: { el: '.swiper1 .swiper-pagination', clickable: true }, navigation: { nextEl: '.swiper1 .swiper-button-next', prevEl: '.swiper1 .swiper-button-prev' } });
         new Swiper('.swiper2', { loop: true, pagination: { el: '.swiper2 .swiper-pagination', clickable: true }, navigation: { nextEl: '.swiper2 .swiper-button-next', prevEl: '.swiper2 .swiper-button-prev' } });
         new Swiper('.swiper3', { loop: true, pagination: { el: '.swiper3 .swiper-pagination', clickable: true }, navigation: { nextEl: '.swiper3 .swiper-button-next', prevEl: '.swiper3 .swiper-button-prev' } });
         new Swiper('.swiper4', { loop: true, pagination: { el: '.swiper4 .swiper-pagination', clickable: true }, navigation: { nextEl: '.swiper4 .swiper-button-next', prevEl: '.swiper4 .swiper-button-prev' } });
-    // Custom language selector logic
-    (function() {
-        const selector = document.getElementById('custom-language-selector');
-        if (!selector) return;
-        const button = selector.querySelector('#selected-language');
-        const options = selector.querySelector('#language-options');
-        const optionItems = options.querySelectorAll('li');
 
-        // Toggle dropdown
-        button.addEventListener('click', function(e) {
-            e.stopPropagation();
-            options.classList.toggle('hidden');
+       
+    
+        // Burger menu toggle
+        const burgerMenu = document.querySelector('#burger-menu');
+        const navLinks = document.querySelector('#nav-links');
+
+        burgerMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('h-0');
         });
 
-        // Select language
-        optionItems.forEach(item => {
-            item.addEventListener('click', function(e) {
-                e.stopPropagation();
-                // Update button content
-                const img = item.querySelector('img').cloneNode(true);
-                const span = item.querySelector('span').cloneNode(true);
-                button.innerHTML = '';
-                button.appendChild(img);
-                button.appendChild(span);
-                // Add dropdown arrow
-                const arrow = document.createElement('svg');
-                arrow.className = 'ml-1 w-4 h-4';
-                arrow.setAttribute('fill', 'none');
-                arrow.setAttribute('stroke', 'currentColor');
-                arrow.setAttribute('viewBox', '0 0 24 24');
-                arrow.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>';
-                button.appendChild(arrow);
-                options.classList.add('hidden');
-            });
-        });
-
-    })();
-
-    // Burger menu toggle
-    const burgerMenu = document.querySelector('#burger-menu');
-    const navLinks = document.querySelector('#nav-links');
-
-    burgerMenu.addEventListener('click', () => {
-        navLinks.classList.toggle('h-0');
-    });
-
-    //Copyright year
-    const copyright = document.querySelector('#copyright_year')
-    copyright.textContent = new Date().getFullYear()
+        //Copyright year
+        const copyright = document.querySelector('#copyright_year')
+        copyright.textContent = new Date().getFullYear()
     </script>
 </body>
 </html>

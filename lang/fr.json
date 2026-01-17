@@ -1,0 +1,101 @@
+{
+    "nav": {
+        "projects": "Projets",
+        "about": "Sur moi",
+        "skills": "Compétences",
+        "contact": "Contact",
+        "burger_menuAriaLabel": "Cliquez pour ouvrir le menu",
+        "lang":{
+            "switchTitle": "Changer de langue",
+            "current_langAlt": "Français",
+            "enAlt": "Icóne Anglais",
+            "esAlt": "Icóne Espagnol",
+            "frAlt": "Icóne Français"
+        }
+    },
+    "hero":{
+        "title": "Développeur Web",
+        "subtitle": "Développeur React JS • PHP Laravel",
+        "seeWork": "Voir mon travail"
+    },
+
+    "social_links":{
+        "githubTitle": "Github",
+        "githubAriaLabel": "Accéder au profil Github",
+        "github_iconAlt": "Icóne Github",
+        
+        "linkedinTitle": "Linkedin",
+        "linkedinAriaLabel": "Accéder au profil Linkedin",
+        "linkedin_iconAlt": "Icóne Linkedin",
+
+        "emailTitle": "Email",
+        "emailAriaLabel": "Cliquez pour copier l'e-mail",
+        "email_iconAlt": "Icóne e-mail",
+
+        "downloadCV": "Télécharger le CV"
+    },
+
+    "projects": {
+        "title": "🗂️ Mes projets",
+        "preview": "Aperçu",
+        "preview_iconAlt": "Icóne aperçu",
+        "code": "Code",
+        "code_iconAlt": "Icóne Github",
+        "p1": {
+            "title": "Fastie Feastie's",
+            "description": "Un menu numérique interactif pour un restaurant de restauration rapide, afin d'améliorer l'expérience de commande des clients.",
+            "picture_1Alt": "Capture d'écran 1 de Fastie Feastie",
+            "picture_2Alt": "Capture d'écran 2 de Fastie Feastie",
+            "picture_3Alt": "Capture d'écran 3 de Fastie Feastie"
+        },
+        "p2": {
+            "title": "Class Planner",
+            "description": "Une application de planification étudiante permettant d'organiser l'agenda des cours par matière, tâches et notes.",
+            "picture_1Alt": "Capture d'écran 1 de Class Planner",
+            "picture_2Alt": "Capture d'écran 2 de Class Planner",
+            "picture_3Alt": "Capture d'écran 3 de Class Planner"
+        },
+        "p3": {
+            "title": "Space English",
+            "description": "Site web d'apprentissage de l'anglais pour pratiquer le vocabulaire et la grammaire grâce à des activités interactives.",
+            "picture_1Alt": "Capture d'écran 1 de Space English",
+            "picture_2Alt": "Capture d'écran 2 de Space English",
+            "picture_3Alt": "Capture d'écran 3 de Space English"
+        },
+        "p4": {
+            "title": "Universal Movers",
+            "description": "Page d'aterrisage des services de déménagement, utilisant une conversion pixel-perfect à partir du design Figma.",
+            "picture_1Alt": "Capture d'écran 1 de Universal Movers",
+            "picture_2Alt": "Capture d'écran 2 de Universal Movers",
+            "picture_3Alt": "Capture d'écran 3 de Universal Movers"
+        }
+    },
+
+    "about":{
+        "title": "👨‍💻 Sur moi",
+        "picture_meAlt": "Photo de Yahir Ortiz",
+        "window_title": "yahirortiz@about:~",
+        "line_before": "yahirortiz@about:~$:",
+        "line_1": "Bonjour ! Je suis Yahir Ortiz, un développeur web passionné, possédant une solide expérience des technologies front-end et back-end, et spécialisé dans la création d'applications web dynamiques et réactives.",
+        "line_2": "J'aime donner vie aux projets et aux idées grâce au code  — c'est la partie la plus passionnante du développement web. J'ai débuté mon parcours de développeur avec HTML, CSS et JavaScript. Ensuite, j'ai maîtrisé React et Laravel pour créer des applications web complètes qui apportent des solutions globales aux projets que je conçois.",
+        "line_3": "Je suis toujours enthousiaste à l'idée de relever de nouveaux défis et de collaborer à des projets passionnants. Contactez-moi et créons ensemble quelque chose d'extraordinaire !"
+    },
+
+    "skills": {
+        "title": "🛠️ Mes compétences"
+    },
+
+    "contact":{
+        "title": "☕ Contactez-moi",
+        "description": "N'hésitez pas à me contacter pour des collaborations ou simplement pour me saluer !",
+        "name_label": "Nom:",
+        "email_label": "E-mail:",
+        "message_label": "Message:",
+        "send_label": "Envoyer Message"
+    },
+
+    "footer": {
+        "developed": "Développé avec ♥️",
+        "copyright": "Yahir Ortiz. Tous droits réservés."
+    }
+}

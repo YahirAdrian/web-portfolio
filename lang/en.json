@@ -1,4 +1,13 @@
 {
+
+    "seo":{
+        "description": "Yahir Ortiz's portfolio. Web developer specializing in React JS and PHP Laravel. Explore projects, skills, and contact information.",
+        "ogDescription": "React JS & PHP Laravel Developer",
+        "title": "Yahir Ortiz | Web developer",
+        "ogTitle": "Yahir Adrian | Web Developer",
+        "keywords": "web developer, React Js, PHP, Laravel, Yahir Ortiz"
+    },
+
     "nav": {
         "projects": "Projects",
         "about": "About",
@@ -29,9 +38,13 @@
         "linkedin_iconAlt": "Linkedin icon",
 
         "emailTitle": "Email",
-        "emailAriaLabel": "Click to copy Email",
-        "email_iconAlt": "Email icon",
+        "emailAriaLabel": "Send email",
+        "email_iconAlt": "Send email icon",
+        "copy_emailAriaLabel": "Click to copy email",
+        "copy_emailTitle": "Copy email",
+        "copy_iconAlt": "Click to copy email",
 
+        "copied_status": "Copied!",
         "downloadCV": "Download CV"
     },
 

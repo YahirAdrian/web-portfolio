@@ -1,4 +1,12 @@
 {
+    "seo":{
+        "description": "Portefeuille de Yahir Ortiz. Développeur web spécialisé dans React JS et PHP Laravel. Explorer les projets, compétences et cordonées.",
+        "ogDescription": "Développeur React JS & PHP Laravel",
+        "title": "Yahir Ortiz | Développeur web",
+        "ogTitle": "Yahir Adrian | Développeur web",
+        "keywords": "développeur web, React Js, PHP, Laravel, Yahir Ortiz"
+    },
+    
     "nav": {
         "projects": "Projets",
         "about": "Sur moi",
@@ -28,10 +36,14 @@
         "linkedinAriaLabel": "Accéder au profil Linkedin",
         "linkedin_iconAlt": "Icóne Linkedin",
 
-        "emailTitle": "Email",
-        "emailAriaLabel": "Cliquez pour copier l'e-mail",
-        "email_iconAlt": "Icóne e-mail",
+        "emailTitle": "E-mail",
+        "emailAriaLabel": "Envoyer e-mail",
+        "email_iconAlt": "Icóne envoyer e-mail",
+        "copy_emailAriaLabel": "Cliquez pour copier l'e-mail",
+        "copy_emailTitle": "Copier l'e-mail",
+        "copy_iconAlt": "Cliquez pour copier l'e-mail",
 
+        "copied_status": "Copié!",
         "downloadCV": "Télécharger le CV"
     },
 

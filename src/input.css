@@ -60,6 +60,10 @@ scroll-behavior: smooth;
     z-index: 1;
 }
 
+#about, #projects, #skills, #contact{
+  scroll-margin-top: 80px; /* Adjust to your header height */
+}
+
 @keyframes paint{
     0% {
         opacity: 1;

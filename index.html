@@ -4,9 +4,11 @@
     <!-- Don't forget to translate header content -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Yahir Ortiz's portfolio. Web developer specializing in React JS and PHP Laravel. Explore projects, skills, and contact information." />
-    <meta name="keywords" content="web developer, React Js, PHP, Laravel, Yahir Ortiz" />
-    <title>Yahir Ortiz | Web Developer</title>
+    <meta name="description" data-i18n-attr="content:seo.description" />
+    <meta name="keywords" data-i18n-attr="content:seo.keywords" />
+    <meta property="og:title" data-i18n-attr="content:seo.ogTitle">
+    <meta property="og:description" data-i18n-attr="content:seo.ogDescription">
+    <title data-i18n="seo.title"></title>
      <link rel="alternate" hreflang="en" href="https://yahirortiz.dev">
     <link rel="alternate" hreflang="es" href="https://yahirortiz.dev?lang=es">
     <link rel="alternate" hreflang="fr" href="https://yahirortiz.dev?lang=fr">
@@ -111,10 +113,15 @@
                 <a
                     href="mailto:yahiradrian7948@gmail.com"
                     data-i18n-attr="title:social_links.emailTitle; aria-label:social_links.emailAriaLabel"
-                    class="flex flex-col items-center text-white transition-all duration-300
+                    class="relative flex flex-col items-center text-white transition-all duration-300
                         hover:text-sky-300 hover:scale-110
                         hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]"
                 >
+                    <button type="button" id="copy-email" class="absolute -right-4 -top-2 bg-accent text-white rounded-full p-1 cursor-pointer transition hover:bg-accent-dark" style="font-size: 0.9rem; z-index: 10;" data-i18n-attr="title:social_links.copy_emailAriaLabel; title: social_links.copy_emailTitle">
+                        <img src="assets/icons/light/copy.svg" width="20" data-i18n-attr="alt:social_links.copy_iconAlt" />
+                    </button>
+                    <span id="copy-tooltip" class="absolute -top-8 left-6 bg-green-500 text-white px-1 py-1 rounded-md text-sm font-bold z-4 shadow transition-all hidden" data-i18n="social_links.copied_status"></span>
+        
                     <img src="assets/icons/light/mail.svg" width="48" data-i18n-attr="alt:social_links.email_iconAlt"/>
                     <span class="text-xs mt-1" data-i18n="social_links.emailTitle"></span>
                 </a>
@@ -229,7 +236,7 @@
                             </div>
                         </div>
                         <h3 class="text-2xl font-semibold mb-2">Space English</h3>
-                        <p class="mb-4 text-gray-300">English leaarning website to practice vocabulary and grammar through interactive activities.</p>
+                        <p class="mb-4 text-gray-300 md:text-xl" data-i18n="projects.p3.description"></p>
                         <div class="tech-tags mb-4">
                             <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">HTML</span>
                             <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">CSS</span>
@@ -262,7 +269,7 @@
                             </div>
                         </div>
                         <h3 class="text-2xl font-semibold mb-2">Univesal Movers</h3>
-                        <p class="mb-4 text-gray-300">Moving services landing page, using pixel-perfect conversion from Figma design. </p>
+                        <p class="mb-4 text-gray-300 md:text-xl" data-i18n="projects.p4.description"></p>
                         <div class="tech-tags mb-4">
                             <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">HTML</span>
                             <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">CSS</span>
@@ -413,25 +420,13 @@
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="src/js/language.js"></script>
+    <script src="src/js/scripts.js"></script>
     <script>
         new Swiper('.swiper1', { loop: true, pagination: { el: '.swiper1 .swiper-pagination', clickable: true }, navigation: { nextEl: '.swiper1 .swiper-button-next', prevEl: '.swiper1 .swiper-button-prev' } });
         new Swiper('.swiper2', { loop: true, pagination: { el: '.swiper2 .swiper-pagination', clickable: true }, navigation: { nextEl: '.swiper2 .swiper-button-next', prevEl: '.swiper2 .swiper-button-prev' } });
         new Swiper('.swiper3', { loop: true, pagination: { el: '.swiper3 .swiper-pagination', clickable: true }, navigation: { nextEl: '.swiper3 .swiper-button-next', prevEl: '.swiper3 .swiper-button-prev' } });
         new Swiper('.swiper4', { loop: true, pagination: { el: '.swiper4 .swiper-pagination', clickable: true }, navigation: { nextEl: '.swiper4 .swiper-button-next', prevEl: '.swiper4 .swiper-button-prev' } });
 
-       
-    
-        // Burger menu toggle
-        const burgerMenu = document.querySelector('#burger-menu');
-        const navLinks = document.querySelector('#nav-links');
-
-        burgerMenu.addEventListener('click', () => {
-            navLinks.classList.toggle('h-0');
-        });
-
-        //Copyright year
-        const copyright = document.querySelector('#copyright_year')
-        copyright.textContent = new Date().getFullYear()
     </script>
 </body>
 </html>

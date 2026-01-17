@@ -1,0 +1,101 @@
+{
+    "nav": {
+        "projects": "Projectos",
+        "about": "Sobre mi",
+        "skills": "Skills",
+        "contact": "Contacto",
+        "burger_menuAriaLabel": "Clic para abrir menú",
+        "lang":{
+            "switchTitle": "Cambiar idioma",
+            "current_langAlt": "Español",
+            "enAlt": "Icono Inglés",
+            "esAlt": "Icono Español ",
+            "frAlt": "Icono Francés"
+        }
+    },
+    "hero":{
+        "title": "Desarrollador Web",
+        "subtitle": "Desarrollador de React JS • PHP Laravel",
+        "seeWork": "Ver mi trabajo"
+    },
+
+    "social_links":{
+        "githubTitle": "Github",
+        "githubAriaLabel": "Ir al perfil de Github",
+        "github_iconAlt": "Icono Github",
+        
+        "linkedinTitle": "Linkedin",
+        "linkedinAriaLabel": "Ir al perfil de Linkedin",
+        "linkedin_iconAlt": "Icono Linkedin",
+
+        "emailTitle": "Email",
+        "emailAriaLabel": "Clic para copiar el email",
+        "email_iconAlt": "Icono Email",
+
+        "downloadCV": "Descargar CV"
+    },
+
+    "projects": {
+        "title": "🗂️ Mis projectos",
+        "preview": "Ver",
+        "preview_iconAlt": "Icono vista previa",
+        "code": "Código",
+        "code_iconAlt": "Icono 3Github",
+        "p1": {
+            "title": "Fastie Feastie's",
+            "description": "Un menú digital interactivo hecho para un restaurante de comida rápida con el fin de mejorar la experiencia del usuario al ordenar.",
+            "picture_1Alt": "Captura de pantalla de Fastie Feastie's 1",
+            "picture_2Alt": "Captura de pantalla de Fastie Feastie's 2",
+            "picture_3Alt": "Captura de pantalla de Fastie Feastie's 3"
+        },
+        "p2": {
+            "title": "Class Planner",
+            "description": "Una agenda de clases para que los estudiantes organicen sus tareas, horario y notas por materias.",
+            "picture_1Alt": "Captura de pantalla de Class Planner 1",
+            "picture_2Alt": "Captura de pantalla de Class Planner 2",
+            "picture_3Alt": "Captura de pantalla de Class Planner 3"
+        },
+        "p3": {
+            "title": "Space English",
+            "description": "Sitio web para aprender inglés en el que se practica vocabulario y gramática a través de actividades interactivas.",
+            "picture_1Alt": "Captura de pantalla de Space English 1",
+            "picture_2Alt": "Captura de pantalla de Space English 2",
+            "picture_3Alt": "Captura de pantalla de Space English 3"
+        },
+        "p4": {
+            "title": "Universal Movers",
+            "description": "Landing page para una agencia de mudanzas, convertido desde un diseño de Figma usando conversión pixel-perfect.",
+            "picture_1Alt": "Universal Movers screenshot 1",
+            "picture_2Alt": "Universal Movers screenshot 2",
+            "picture_3Alt": "Universal Movers screenshot 3"
+        }
+    },
+
+    "about":{
+        "title": "👨‍💻 Sobre mí",
+        "picture_meAlt": "Foto de Yahir Ortiz",
+        "window_title": "yahirortiz@about:~",
+        "line_before": "yahirortiz@about:~$:",
+        "line_1": "¡Hola! Soy Yahir Ortiz, un Desarrollador Web apasionado con amplios conocimientos de tecnologías Backend y Fronted, creando aplicaciones web dinámicas y responisvas.",
+        "line_2": "Me gusta darle vida a los proyectos e ideas a través del códgio — la parte mas interesante del Desarrollo Web. Me introduje al desarrollo web con HTML, CSS y JavaScript, y luego me especialicé en React y Laravel para contruir sitios web Full Stack para dar soluciones completas a los proyectos que construyo.",
+        "line_3": "Siempre estoy dispuesto a tomar nuevos retos y colaborar en increibles proyectos. ¡Trabajemos juntos y creemos proyectos asombrosos!"
+    },
+
+    "skills": {
+        "title": "🛠️ Mis Skills"
+    },
+
+    "contact":{
+        "title": "☕ Contáctame",
+        "description": "No dudes en contactarme para colaborar, o simplemente envíame un saludo amistoso.",
+        "name_label": "Nombre:",
+        "email_label": "Email:",
+        "message_label": "Mensaje:",
+        "send_label": "Enviar mensaje"
+    },
+
+    "footer": {
+        "developed": "Desarrollado con ♥️",
+        "copyright": "Yahir Ortiz. Todos los derechos reservados."
+    }
+}

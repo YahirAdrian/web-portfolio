@@ -1,4 +1,4 @@
-# Yahir Adrian's web portfolio
+# Yahir Ortiz's web portfolio
 
 My web developer portfolio as a FullStack web developer. This portfolio showcases my lastest projects I built with a demo and link to its code on Github. You can also find the frameworks, programming languages and tools I work with to build my projects.
 

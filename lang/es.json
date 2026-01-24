@@ -8,7 +8,7 @@
     },
 
     "nav": {
-        "projects": "Projectos",
+        "projects": "Proyectos",
         "about": "Sobre mi",
         "skills": "Skills",
         "contact": "Contacto",
@@ -48,7 +48,7 @@
     },
 
     "projects": {
-        "title": "🗂️ Mis projectos",
+        "title": "🗂️ Proyectos",
         "preview": "Ver",
         "preview_iconAlt": "Icono vista previa",
         "code": "Código",
@@ -94,11 +94,11 @@
     },
 
     "skills": {
-        "title": "🛠️ Mis Skills"
+        "title": "🛠️ Skills"
     },
 
     "contact":{
-        "title": "☕ Contáctame",
+        "title": "☕ Contacto",
         "description": "No dudes en contactarme para colaborar, o simplemente envíame un saludo amistoso.",
         "name_label": "Nombre:",
         "email_label": "Email:",

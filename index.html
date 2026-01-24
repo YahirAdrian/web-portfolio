@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Don't forget to translate header content -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" data-i18n-attr="content:seo.description" />
@@ -17,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="dist/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="src/css/swiper-bundle.min.css"/>
 </head>
 
 <body class="bg-linear-to-br from-dark to-accent-dark/70">
@@ -96,31 +95,31 @@
         </div>
 
         <nav id="contact-icons" >
-            <div class="flex gap-4 mt-6">
+            <div class="flex justify-center gap-4 mt-6">
                 <a href="https://github.com/YahirAdrian" data-i18n-attr="title:social_links.githubTitle; aria-label:social_links.githubAriaLabel"
                     class="flex flex-col items-center text-white hover:text-sky-300 transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]"
                 >
                    <img src="/assets/icons/light/github.svg" width="48" data-i18n-attr="alt:social_links.github_iconAlt"/>
                    <span class="text-xs mt-1">Github</span>
                 </a>
-                <a href="https://www.linkedin.com/in/yahir-ortiz/" data-i18n-attr="title:social_links.linkedinTitle; aria-label:social_links.linkedinAriaLabel"
+                <!-- <a href="https://www.linkedin.com/in/yahir-ortiz/" data-i18n-attr="title:social_links.linkedinTitle; aria-label:social_links.linkedinAriaLabel"
                     class="flex flex-col items-center text-white hover:text-sky-300 transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]"
                 >
                     <img src="assets/icons/light/linkedin.svg" width="48" data-i18n-attr="alt:social_links.linkedin_iconAlt"/>
                     <span class="text-xs mt-1">Linkedin</span>
-                </a>
+                </a> -->
                
                 <a
                     href="mailto:yahiradrian7948@gmail.com"
                     data-i18n-attr="title:social_links.emailTitle; aria-label:social_links.emailAriaLabel"
-                    class="relative flex flex-col items-center text-white transition-all duration-300
+                    class="group relative flex flex-col items-center text-white transition-all duration-300
                         hover:text-sky-300 hover:scale-110
                         hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]"
                 >
-                    <button type="button" id="copy-email" class="absolute -right-4 -top-2 bg-accent text-white rounded-full p-1 cursor-pointer transition hover:bg-accent-dark" style="font-size: 0.9rem; z-index: 10;" data-i18n-attr="title:social_links.copy_emailAriaLabel; title: social_links.copy_emailTitle">
-                        <img src="assets/icons/light/copy.svg" width="20" data-i18n-attr="alt:social_links.copy_iconAlt" />
+                    <button type="button" id="copy-email" class="md:opacity-0 group-hover:opacity-100 group-focus:opacity-100 absolute -right-4 -top-2 bg-accent text-white rounded-full p-1 cursor-pointer transition hover:bg-accent-dark" data-i18n-attr="title:social_links.copy_emailAriaLabel; title: social_links.copy_emailTitle">
+                        <img src="assets/icons/light/copy.svg" class="p-1" width="24" data-i18n-attr="alt:social_links.copy_iconAlt" />
                     </button>
-                    <span id="copy-tooltip" class="absolute -top-8 left-6 bg-green-500 text-white px-1 py-1 rounded-md text-sm font-bold z-4 shadow transition-all hidden" data-i18n="social_links.copied_status"></span>
+                    <span id="copy-tooltip" class="absolute -top-8 left-6 bg-green-500 text-white px-1 py-1 rounded-md text-sm font-bold z-1 shadow transition-all hidden" data-i18n="social_links.copied_status"></span>
         
                     <img src="assets/icons/light/mail.svg" width="48" data-i18n-attr="alt:social_links.email_iconAlt"/>
                     <span class="text-xs mt-1" data-i18n="social_links.emailTitle"></span>
@@ -158,9 +157,9 @@
                         <div class="relative w-full mb-4 overflow-hidden rounded-lg">
                             <div class="swiper swiper1">
                                 <div class="swiper-wrapper aspect-video">
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/1.1-Fastie-Feasties.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p1.picture_1Alt"></div>
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/1.2-Fastie-Feasties.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p1.picture_2Alt"></div>
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/1.3-Fastie-Feasties.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p1.picture_3Alt"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/1.1-Fastie-Feasties.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p1.picture_1Alt"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/1.2-Fastie-Feasties.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p1.picture_2Alt"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/1.3-Fastie-Feasties.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p1.picture_3Alt"></div>
                                 </div>
                                 <div class="swiper-pagination"></div>
                                 <div class="swiper-button-prev"></div>
@@ -193,9 +192,9 @@
                         <div class="relative w-full mb-4 overflow-hidden rounded-lg">
                             <div class="swiper swiper2">
                                 <div class="swiper-wrapper aspect-video">
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/2.1-ClassPlanner.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p2.picture_1Alt"></div>
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/2.2-ClassPlanner.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p2.picture_2Alt"></div>
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/2.3-ClassPlanner.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p2.picture_3Alt"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/2.1-ClassPlanner.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p2.picture_1Alt"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/2.2-ClassPlanner.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p2.picture_2Alt"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/2.3-ClassPlanner.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p2.picture_3Alt"></div>
                                 </div>
                                 <div class="swiper-pagination"></div>
                                 <div class="swiper-button-prev"></div>
@@ -226,9 +225,9 @@
                         <div class="relative w-full mb-4 overflow-hidden rounded-lg">
                             <div class="swiper swiper3">
                                 <div class="swiper-wrapper aspect-video">
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/3.1-SpaceEnglish.avif" alt="Space English project screenshot 1" class="object-cover w-full h-full"></div>
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/3.2-SpaceEnglish.avif" alt="Space English project screenshot 2" class="object-cover w-full h-full"></div>
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/3.3-SpaceEnglish.avif" alt="Space English project screenshot 2" class="object-cover w-full h-full"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/3.1-SpaceEnglish.avif" alt="Space English project screenshot 1" class="object-cover w-full h-full"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/3.2-SpaceEnglish.avif" alt="Space English project screenshot 2" class="object-cover w-full h-full"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/3.3-SpaceEnglish.avif" alt="Space English project screenshot 2" class="object-cover w-full h-full"></div>
                                 </div>
                                 <div class="swiper-pagination"></div>
                                 <div class="swiper-button-prev"></div>
@@ -259,9 +258,9 @@
                         <div class="relative w-full mb-4 overflow-hidden rounded-lg">
                             <div class="swiper swiper4">
                                 <div class="swiper-wrapper aspect-video">
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/4.1-Universal-Movers.avif" alt="Universal Movers project screenshot 1" class="object-cover w-full h-full"></div>
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/4.2-Universal-Movers.avif" alt="Universal Movers project screenshot 2" class="object-cover w-full h-full"></div>
-                                    <div class="swiper-slide"><img class="aspect-video" src="assets/projects/4.3-Universal-Movers.avif" alt="Universal Movers project screenshot 2" class="object-cover w-full h-full"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/4.1-Universal-Movers.avif" alt="Universal Movers project screenshot 1" class="object-cover w-full h-full"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/4.2-Universal-Movers.avif" alt="Universal Movers project screenshot 2" class="object-cover w-full h-full"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/4.3-Universal-Movers.avif" alt="Universal Movers project screenshot 2" class="object-cover w-full h-full"></div>
                                 </div>
                                 <div class="swiper-pagination"></div>
                                 <div class="swiper-button-prev"></div>
@@ -375,7 +374,7 @@
                           <span class="text-lg font-bold">NodeJs</span>
                         </div>
                         <div class="flex flex-col items-center p-5 hover:scale-115 hover:bg-white hover:text-dark rounded-xl transition-transform duration-150 ease-in cursor-pointer">
-                          <img class="w-12" src="https://images.icon-icons.com/2699/PNG/512/wordpress_logo_icon_167953.png" alt="WordPress icon"/>
+                          <img class="w-12" src="assets/icons/light/wordpress.webp" alt="WordPress icon"/>
                           <span class="text-lg font-bold">WordPress</span>
                         </div>
                         
@@ -418,7 +417,7 @@
         </div>
     </footer>
     
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="src/js/swiper-bundle.min.js"></script>
     <script src="src/js/language.js"></script>
     <script src="src/js/scripts.js"></script>
     <script>

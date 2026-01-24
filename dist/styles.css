@@ -220,6 +220,9 @@
   }
 }
 @layer utilities {
+  .visible {
+    visibility: visible;
+  }
   .absolute {
     position: absolute;
   }
@@ -229,8 +232,8 @@
   .relative {
     position: relative;
   }
-  .-top-0 {
-    top: calc(var(--spacing) * -0);
+  .static {
+    position: static;
   }
   .-top-1 {
     top: calc(var(--spacing) * -1);
@@ -238,56 +241,20 @@
   .-top-2 {
     top: calc(var(--spacing) * -2);
   }
-  .-top-4 {
-    top: calc(var(--spacing) * -4);
-  }
-  .-top-5 {
-    top: calc(var(--spacing) * -5);
-  }
-  .-top-6 {
-    top: calc(var(--spacing) * -6);
-  }
   .-top-8 {
     top: calc(var(--spacing) * -8);
-  }
-  .-top-10 {
-    top: calc(var(--spacing) * -10);
   }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .top-5 {
-    top: calc(var(--spacing) * 5);
-  }
-  .top-8 {
-    top: calc(var(--spacing) * 8);
-  }
   .top-16 {
     top: calc(var(--spacing) * 16);
-  }
-  .-right-0 {
-    right: calc(var(--spacing) * -0);
   }
   .-right-4 {
     right: calc(var(--spacing) * -4);
   }
-  .-right-8 {
-    right: calc(var(--spacing) * -8);
-  }
-  .-right-14 {
-    right: calc(var(--spacing) * -14);
-  }
-  .-right-24 {
-    right: calc(var(--spacing) * -24);
-  }
-  .-right-45 {
-    right: calc(var(--spacing) * -45);
-  }
   .right-0 {
     right: calc(var(--spacing) * 0);
-  }
-  .right-4 {
-    right: calc(var(--spacing) * 4);
   }
   .bottom-4 {
     bottom: calc(var(--spacing) * 4);
@@ -301,20 +268,35 @@
   .left-1\/2 {
     left: calc(1/2 * 100%);
   }
-  .left-4 {
-    left: calc(var(--spacing) * 4);
-  }
   .left-6 {
     left: calc(var(--spacing) * 6);
   }
-  .left-40 {
-    left: calc(var(--spacing) * 40);
+  .z-1 {
+    z-index: 1;
   }
   .z-4 {
     z-index: 4;
   }
   .z-10 {
     z-index: 10;
+  }
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
   }
   .mx-3 {
     margin-inline: calc(var(--spacing) * 3);
@@ -706,9 +688,6 @@
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
-  .py-2\.5 {
-    padding-block: calc(var(--spacing) * 2.5);
-  }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
@@ -802,9 +781,6 @@
   .opacity-75 {
     opacity: 75%;
   }
-  .opacity-100 {
-    opacity: 100%;
-  }
   .shadow {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -896,6 +872,9 @@
     --tw-ease: var(--ease-in);
     transition-timing-function: var(--ease-in);
   }
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
   .text-shadow-black {
     --tw-text-shadow-color: #000;
     @supports (color: color-mix(in lab, red, red)) {
@@ -910,6 +889,30 @@
   }
   .text-shadow-lg {
     text-shadow: 0px 1px 2px var(--tw-text-shadow-color, rgb(0 0 0 / 0.1)), 0px 3px 2px var(--tw-text-shadow-color, rgb(0 0 0 / 0.1)), 0px 4px 8px var(--tw-text-shadow-color, rgb(0 0 0 / 0.1));
+  }
+  .group-hover\:opacity-0 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        opacity: 0%;
+      }
+    }
+  }
+  .group-hover\:opacity-100 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        opacity: 100%;
+      }
+    }
+  }
+  .group-focus\:opacity-100 {
+    &:is(:where(.group):focus *) {
+      opacity: 100%;
+    }
+  }
+  .group-active\:opacity-100 {
+    &:is(:where(.group):active *) {
+      opacity: 100%;
+    }
   }
   .hover\:scale-105 {
     &:hover {
@@ -1157,6 +1160,18 @@
     @media (width >= 48rem) {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  .md\:opacity-0 {
+    @media (width >= 48rem) {
+      opacity: 0%;
+    }
+  }
+  .md\:group-focus\:opacity-100 {
+    @media (width >= 48rem) {
+      &:is(:where(.group):focus *) {
+        opacity: 100%;
+      }
     }
   }
   .lg\:p-10 {

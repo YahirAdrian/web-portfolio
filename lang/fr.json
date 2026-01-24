@@ -48,7 +48,7 @@
     },
 
     "projects": {
-        "title": "🗂️ Mes projets",
+        "title": "🗂️ Projets",
         "preview": "Aperçu",
         "preview_iconAlt": "Icóne aperçu",
         "code": "Code",
@@ -94,11 +94,11 @@
     },
 
     "skills": {
-        "title": "🛠️ Mes compétences"
+        "title": "🛠️ Compétences"
     },
 
     "contact":{
-        "title": "☕ Contactez-moi",
+        "title": "☕ Contact",
         "description": "N'hésitez pas à me contacter pour des collaborations ou simplement pour me saluer !",
         "name_label": "Nom:",
         "email_label": "E-mail:",

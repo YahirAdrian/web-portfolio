@@ -48,7 +48,7 @@
     },
 
     "projects": {
-        "title": "🗂️ Projets",
+        "title": "Projets",
         "preview": "Aperçu",
         "preview_iconAlt": "Icóne aperçu",
         "code": "Code",
@@ -84,7 +84,7 @@
     },
 
     "about":{
-        "title": "👨‍💻 Sur moi",
+        "title": "Sur moi",
         "picture_meAlt": "Photo de Yahir Ortiz",
         "window_title": "yahirortiz@about:~",
         "line_before": "yahirortiz@about:~$:",
@@ -94,11 +94,12 @@
     },
 
     "skills": {
-        "title": "🛠️ Compétences"
+        "title": "Compétences",
+        "learning_label": "En cours"
     },
 
     "contact":{
-        "title": "☕ Contact",
+        "title": "Contact",
         "description": "N'hésitez pas à me contacter pour des collaborations ou simplement pour me saluer !",
         "name_label": "Nom:",
         "email_label": "E-mail:",

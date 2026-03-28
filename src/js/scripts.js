@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (copyBtn) {
     copyBtn.addEventListener('click', function(e) {
         e.preventDefault();
-        navigator.clipboard.writeText('yahiradrian7948@gmail.com').then(() => {
+        navigator.clipboard.writeText('me@yahirortiz.dev').then(() => {
         // Create tooltip if not exists
         let tooltip = document.getElementById('copy-tooltip');
         tooltip.classList.toggle('hidden')

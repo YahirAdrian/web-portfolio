@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - Gameful English: Plataforma Gamificada en Moodle</title>
+    <link rel="icon" type="image/x-icon" href="../../assets/icons/logo/icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../../dist/styles.css">
+    <link rel="stylesheet" href="../../src/css/swiper-bundle.min.css"/>
+    <style>
+        .project-layout {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            max-width: 80rem;
+            margin: 0 auto;
+        }
+        .project-left {
+            width: 100%;
+        }
+        .project-right {
+            width: 100%;
+        }
+        .tech-desktop { display: none; }
+        .tech-mobile { display: block; }
+
+        @media (min-width: 64rem) {
+            .project-layout {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+            .project-left {
+                width: 50%;
+                position: sticky;
+                top: 5rem;
+                align-self: flex-start;
+            }
+            .project-right {
+                width: 50%;
+            }
+            .tech-desktop { display: block; }
+            .tech-mobile { display: none; }
+        }
+    </style>
+</head>
+<body class="bg-linear-to-br from-dark to-accent-dark/70">
+
+    <!-- Navigation (same as main page) -->
+    <header>
+        <nav class="fixed w-full top-0 left-0 flex justify-between bg-primary-700 z-4 shadow-md shadow-black/50">
+            <div class="flex items-center p-4">
+                <img src="../../assets/icons/logo/icon.png" alt="Yahir Ortiz logo" width="36"/>
+                <h1 class="hidden sm:block text-2xl ms-2 font-bold">
+                    <a href="../../index.html">Yahir Ortiz</a>
+                </h1>
+            </div>
+
+            <div class="flex items-center">
+                <div class="flex items-center font-bold h-full">
+                    <ul id="nav-links" class="absolute sm:static h-0 sm:h-auto top-16 right-0 flex flex-col sm:flex-row gap-0 sm:gap-6 w-full overflow-hidden sm:w-auto text-lg text-center sm:p-0 transition-all duration-300">
+                        <li class="bg-primary-700 hover:bg-accent/50 rounded-none sm:rounded-md px-3 py-2">
+                            <a href="../../index.html">Inicio</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="custom-language-selector" class="ms-2 relative" data-i18n-attr="title:nav.lang.switchTitle">
+                    <button type="button" id="selected-language" class="flex items-center gap-2 cursor-pointer px-2 py-1 rounded transition min-w-15">
+                        <img src="../../assets/icons/lang/es.svg" width="24" class="inline" data-i18n-attr="alt:nav.lang.current_langAlt"/>
+                        <span class="font-bold">ES</span>
+                        <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <!-- <ul id="language-options" class="absolute left-0 mt-1 w-full bg-primary-300 rounded shadow-lg z-10 hidden">
+                        <li class="flex items-center gap-2 px-2 py-1 cursor-pointer hover:bg-primary-100" data-lang="en">
+                            <img src="../../assets/icons/lang/en.svg" width="24" class="inline" data-i18n-attr="alt:nav.lang.enAlt"/>
+                            <span class="font-bold">EN</span>
+                        </li>
+                        <li class="flex items-center gap-2 px-2 py-1 cursor-pointer hover:bg-primary-100" data-lang="es">
+                            <img src="../../assets/icons/lang/es.svg" width="24" class="inline" data-i18n-attr="alt:nav.lang.esAlt"/>
+                            <span class="font-bold">ES</span>
+                        </li>
+                        <li class="flex items-center gap-2 px-2 py-1 cursor-pointer hover:bg-primary-100" data-lang="fr">
+                            <img src="../../assets/icons/lang/fr.svg" width="24" class="inline" data-i18n-attr="alt:nav.lang.frAlt"/>
+                            <span class="font-bold">FR</span>
+                        </li>
+                    </ul> -->
+                </div>
+
+                <button type="button" id="burger-menu" class="sm:hidden mx-3 text-white p-2 cursor-pointer" data-i18n-attr="aria-label:nav.burger_menuAriaLabel">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mx-3 sm:mx-8 md:mx-12 xl:mx-24 pb-16" style="padding-top: 5rem;">
+
+        <!-- Project Title -->
+        <section class="mt-8 mb-8 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Gameful English</h1>
+            <p class="text-xl md:text-2xl text-gray-300">Plataforma Gamificada Moodle para Aprendizaje de Inglés </p>
+        </section>
+
+        <!-- Two-column layout: sticky left (carousel + links) | scrollable right (details) -->
+        <div class="project-layout">
+
+            <!-- Left Column: Carousel + Action Buttons (sticky on desktop) -->
+            <div class="project-left flex flex-col gap-6">
+
+                <!-- Image Carousel -->
+                <div class="bg-dark rounded-xl shadow-gray-400/10 shadow-lg overflow-hidden">
+                    <!-- <div class="swiper swiperProject">
+                        <div class="swiper-wrapper aspect-video">
+                            <div class="swiper-slide">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/OaXqx0LK7m4?si=iMx0vNp_Sd538-kX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div> -->
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/OaXqx0LK7m4?si=iMx0vNp_Sd538-kX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <!-- Action Buttons -->
+                <!-- <div class="flex flex-wrap gap-4">
+                    <a href="#" target="_blank" class="py-2 px-4 bg-accent text-white rounded-lg font-bold hover:bg-primary-600 transition">
+                        <img src="../../assets/icons/light/external-link.svg" width="16" class="inline mr-2" alt="Preview icon"/>
+                        Vista Previa
+                    </a>
+                </div> -->
+
+                <!-- Tech Stack (visible on desktop, under carousel) -->
+                <div class="tech-desktop bg-dark rounded-xl shadow-gray-400/10 shadow-lg p-6">
+                    <h2 class="text-2xl font-bold mb-4">Stack Tecnológico</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="inline-block bg-accent-dark text-white text-sm font-semibold px-3 py-1 rounded-full">Moodle LMS</span>
+                        <span class="inline-block bg-accent-dark text-white text-sm font-semibold px-3 py-1 rounded-full">PHP</span>
+                        <span class="inline-block bg-accent-dark text-white text-sm font-semibold px-3 py-1 rounded-full">MySQL</span>
+                        <span class="inline-block bg-accent-dark text-white text-sm font-semibold px-3 py-1 rounded-full">HTML</span>
+                        <span class="inline-block bg-accent-dark text-white text-sm font-semibold px-3 py-1 rounded-full">CSS</span>
+                        <span class="inline-block bg-accent-dark text-white text-sm font-semibold px-3 py-1 rounded-full">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Project Details (scrollable) -->
+            <div class="project-right flex flex-col gap-8">
+
+                <!-- Tech Stack (mobile only) -->
+                <div class="tech-mobile bg-dark rounded-xl shadow-gray-400/10 shadow-lg p-6">
+                    <h2 class="text-2xl font-bold mb-4">Tech Stack</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="inline-block bg-accent-dark text-white text-sm font-semibold px-3 py-1 rounded-full">Moodle</span>
+                        <span class="inline-block bg-accent-dark text-white text-sm font-semibold px-3 py-1 rounded-full">PHP</span>
+                        <span class="inline-block bg-accent-dark text-white text-sm font-semibold px-3 py-1 rounded-full">MySQL</span>
+                        <span class="inline-block bg-accent-dark text-white text-sm font-semibold px-3 py-1 rounded-full">HTML</span>
+                        <span class="inline-block bg-accent-dark text-white text-sm font-semibold px-3 py-1 rounded-full">CSS</span>
+                        <span class="inline-block bg-accent-dark text-white text-sm font-semibold px-3 py-1 rounded-full">JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Overview -->
+                <article class="bg-dark rounded-xl shadow-gray-400/10 shadow-lg p-6 lg:p-10">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4">Descripción</h2>
+                    <p class="text-gray-300 md:text-lg leading-relaxed mb-4">
+                        Gameful English es una plataforma de aprendizaje de inglés gamificada desarrollada utilizando Moodle LMS. El proyecto se diseñó para ofrecer una experiencia educativa atractiva e interactiva, incorporando elementos de gamificación como puntos, insignias y desafíos para motivar a los estudiantes a aprender inglés de manera divertida y efectiva.
+                    </p>
+                    <p class="text-gray-300 md:text-lg leading-relaxed">
+                        La plataforma fue implentada en una escuela secundaria local, donde más de 50 alumnos participaron en el proyecto. Esta plataforma permitión la integración de gamificación digital, recursos interactivos y aprendizaje personalizado, lo que resultó en un aumento significativo en la motivación y el rendimiento de los estudiantes en las clases de inglés.
+                    </p>
+                </article>
+                <!-- Project Info -->
+                <div class="bg-dark rounded-xl shadow-gray-400/10 shadow-lg p-6 lg:p-10">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4">Información del Proyecto</h2>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex justify-between">
+                            <span class="font-semibold text-white">Tipo</span>
+                            <span>Administración y personalización de plataforma LMS</span>
+                        </li>
+                        <li class="border-t border-gray-600 pt-3 flex justify-between">
+                            <span class="font-semibold text-white">Rol</span>
+                            <span>Desarrollador Full Stack, Administrador y Profesor</span>
+                        </li>
+                        <li class="border-t border-gray-600 pt-3 flex justify-between">
+                            <span class="font-semibold text-white">Platform</span>
+                            <span>Moodle LMS</span>
+                        </li>
+                        <li class="border-t border-gray-600 pt-3 flex justify-between">
+                            <span class="font-semibold text-white">Status</span>
+                            <span class="text-green-400 font-semibold">Implementado</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Key Features -->
+                <article class="bg-dark rounded-xl shadow-gray-400/10 shadow-lg p-6 lg:p-10">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4">Características Principales</h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1 text-accent text-xl">&#9654;</span>
+                            <div>
+                                <h3 class="font-semibold text-lg">Instalación y Personalización de Plataforma Moodle</h3>
+                                <p class="text-gray-300">Administración y mantenimiento del servidor y configuración inicial de la plataforma para personalizar su apariencia y funcionalidad.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1 text-accent text-xl">&#9654;</span>
+                            <div>
+                                <h3 class="font-semibold text-lg">Sistema de Gamificación</h3>
+                                <p class="text-gray-300">Puntos, insignias y tableros de líderes para rastrear el progreso del estudiante y fomentar la participación.</p>
+                            </div>
+                        </li>
+                        
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1 text-accent text-xl">&#9654;</span>
+                            <div>
+                                <h3 class="font-semibold text-lg">Desafíos Interactivos</h3>
+                                <p class="text-gray-300">Pruebas, actividades y misiones adaptadas a diferentes niveles de dominio del inglés.</p>
+                            </div>
+                        </li>
+                        
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1 text-accent text-xl">&#9654;</span>
+                            <div>
+                                <h3 class="font-semibold text-lg">Seguimiento de Progreso</h3>
+                                <p class="text-gray-300">Paneles de control detallados para estudiantes y profesores para monitorear los resultados del aprendizaje y la participación.</p>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </article>
+
+                <!-- Challenges & Learnings -->
+                <article class="bg-dark rounded-xl shadow-gray-400/10 shadow-lg p-6 lg:p-10">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4">Retos y Aprendizajes</h2>
+                    <div class="space-y-4 text-gray-300 md:text-lg leading-relaxed">
+                        <p>
+                            Personalizar Moodle para obtener una experiencia completamente gamificada requirió una comprensión profunda de la arquitectura de plugins y el sistema de temas de la plataforma. Equilibrar la efectividad educativa con mecánicas de juego atractivas fue un desafío de diseño central.
+                        </p>
+                        <p>
+                            A través de este proyecto, gané experiencia en administración de LMS, desarrollo de plugins de Moodle y aplicación de principios de gamificación en contextos educativos reales.
+                        </p>
+                    </div>
+                </article>
+
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="bg-primary-700 text-center py-6 border-t border-dark-500">
+            <p>Desarrollado por Yahir Ortiz</p>
+            <p>
+                <span>&copy;</span>
+                <span id="copyright_year"></span>
+                <span>Yahir Ortiz. Todos los derechos reservados.</span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../../src/js/swiper-bundle.min.js"></script>
+    <!-- <script src="../../src/js/language.js"></script> -->
+    <script>
+        // Copyright year
+        document.getElementById('copyright_year').textContent = new Date().getFullYear();
+
+        // Initialize Swiper
+        new Swiper('.swiperProject', {
+            loop: true,
+            pagination: {
+                el: '.swiperProject .swiper-pagination',
+                clickable: true
+            },
+            navigation: {
+                nextEl: '.swiperProject .swiper-button-next',
+                prevEl: '.swiperProject .swiper-button-prev'
+            }
+        });
+
+        // Burger menu toggle
+        const burgerMenu = document.querySelector('#burger-menu');
+        const navLinks = document.querySelector('#nav-links');
+
+        burgerMenu.addEventListener('click', () => {
+            navLinks.style.transition = 'height 0.3s ease';
+            if (navLinks.classList.contains('h-0')) {
+                navLinks.style.height = '0px';
+                void navLinks.offsetWidth;
+                navLinks.classList.remove('h-0');
+                navLinks.style.height = navLinks.scrollHeight + 'px';
+                setTimeout(() => { navLinks.style.height = ''; }, 300);
+            } else {
+                navLinks.style.height = navLinks.scrollHeight + 'px';
+                void navLinks.offsetWidth;
+                navLinks.style.height = '0px';
+                setTimeout(() => { navLinks.classList.add('h-0'); navLinks.style.height = ''; }, 300);
+            }
+        });
+    </script>
+</body>
+</html>

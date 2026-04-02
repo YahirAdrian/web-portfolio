@@ -51,9 +51,13 @@
     "projects": {
         "title": "Projects",
         "preview": "Preview",
+        "preview_soon": "Preview coming soon",
         "preview_iconAlt": "Preview icon",
         "code": "Code",
         "code_iconAlt": "Github icon",
+        "status": {
+            "in_development": "In development"
+        },
         "p1": {
             "title": "Fastie Feastie's",
             "description": "An interactive digital menu for a fast-food restaurant to improve customer ordering experience.",
@@ -62,25 +66,25 @@
             "picture_3Alt": "Fastie Feastie's screenshot 3"
         },
         "p2": {
+            "title": "Shoppy Adminer",
+            "description": "Point of Sale (POS) and Inventory management system for retail stores to streamline sales and stock control.",
+            "picture_1Alt": "Universal Movers screenshot 1",
+            "picture_2Alt": "Universal Movers screenshot 2",
+            "picture_3Alt": "Universal Movers screenshot 3"
+        },
+        "p3": {
             "title": "Class Planner",
             "description": "A student planner application to organize schedule, tasks and notes by subject.",
             "picture_1Alt": "Class Planner screenshot 1",
             "picture_2Alt": "Class Planner screenshot 2",
             "picture_3Alt": "Class Planner screenshot 3"
         },
-        "p3": {
+        "p4": {
             "title": "Space English",
             "description": "English learning website to practice vocabulary and grammar through interactive activities.",
             "picture_1Alt": "Space English screenshot 1",
             "picture_2Alt": "Space English screenshot 2",
             "picture_3Alt": "Space English screenshot 3"
-        },
-        "p4": {
-            "title": "Universal Movers",
-            "description": "Moving services landing page, using pixel-perfect conversion from Figma design.",
-            "picture_1Alt": "Universal Movers screenshot 1",
-            "picture_2Alt": "Universal Movers screenshot 2",
-            "picture_3Alt": "Universal Movers screenshot 3"
         }
     },
 

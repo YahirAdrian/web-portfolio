@@ -50,9 +50,13 @@
     "projects": {
         "title": "Proyectos",
         "preview": "Ver",
+        "preview_soon": "Pronto disponible",
         "preview_iconAlt": "Icono vista previa",
         "code": "Código",
-        "code_iconAlt": "Icono 3Github",
+        "code_iconAlt": "Icono Github",
+        "status": {
+            "in_development": "En desarrollo"
+        },
         "p1": {
             "title": "Fastie Feastie's",
             "description": "Un menú digital interactivo hecho para un restaurante de comida rápida con el fin de mejorar la experiencia del usuario al ordenar.",
@@ -61,25 +65,25 @@
             "picture_3Alt": "Captura de pantalla de Fastie Feastie's 3"
         },
         "p2": {
+            "title": "Shoppy Adminer",
+            "description": "Punto de Venta (POS) y sistema de gestión de inventario para tiendas minoristas para optimizar ventas y control de stock.",
+            "picture_1Alt": "Captura de pantalla de Shoppy Adminer 1",
+            "picture_2Alt": "Captura de pantalla de Shoppy Adminer 2",
+            "picture_3Alt": "Captura de pantalla de Shoppy Adminer 3"
+        },
+        "p3": {
             "title": "Class Planner",
             "description": "Una agenda de clases para que los estudiantes organicen sus tareas, horario y notas por materias.",
             "picture_1Alt": "Captura de pantalla de Class Planner 1",
             "picture_2Alt": "Captura de pantalla de Class Planner 2",
             "picture_3Alt": "Captura de pantalla de Class Planner 3"
         },
-        "p3": {
+        "p4": {
             "title": "Space English",
             "description": "Sitio web para aprender inglés en el que se practica vocabulario y gramática a través de actividades interactivas.",
             "picture_1Alt": "Captura de pantalla de Space English 1",
             "picture_2Alt": "Captura de pantalla de Space English 2",
             "picture_3Alt": "Captura de pantalla de Space English 3"
-        },
-        "p4": {
-            "title": "Universal Movers",
-            "description": "Landing page para una agencia de mudanzas, convertido desde un diseño de Figma usando conversión pixel-perfect.",
-            "picture_1Alt": "Universal Movers screenshot 1",
-            "picture_2Alt": "Universal Movers screenshot 2",
-            "picture_3Alt": "Universal Movers screenshot 3"
         }
     },
 

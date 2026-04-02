@@ -50,9 +50,13 @@
     "projects": {
         "title": "Projets",
         "preview": "Aperçu",
+        "preview_soon": "Aperçu bientôt disponible",
         "preview_iconAlt": "Icóne aperçu",
         "code": "Code",
         "code_iconAlt": "Icóne Github",
+        "status": {
+            "in_development": "En développement"
+        },
         "p1": {
             "title": "Fastie Feastie's",
             "description": "Un menu numérique interactif pour un restaurant de restauration rapide, afin d'améliorer l'expérience de commande des clients.",
@@ -61,25 +65,25 @@
             "picture_3Alt": "Capture d'écran 3 de Fastie Feastie"
         },
         "p2": {
+            "title": "Shoppy Adminer",
+            "description": "Un système de point de vente (POS) et de gestion d'inventaire pour les magasins de détail afin d'optimiser les ventes et le contrôle des stocks.",
+            "picture_1Alt": "Capture d'écran 1 de Shoppy Adminer",
+            "picture_2Alt": "Capture d'écran 2 de Shoppy Adminer",
+            "picture_3Alt": "Capture d'écran 3 de Shoppy Adminer"
+        },
+        "p3": {
             "title": "Class Planner",
             "description": "Une application de planification étudiante permettant d'organiser l'agenda des cours par matière, tâches et notes.",
             "picture_1Alt": "Capture d'écran 1 de Class Planner",
             "picture_2Alt": "Capture d'écran 2 de Class Planner",
             "picture_3Alt": "Capture d'écran 3 de Class Planner"
         },
-        "p3": {
+        "p4": {
             "title": "Space English",
             "description": "Site web d'apprentissage de l'anglais pour pratiquer le vocabulaire et la grammaire grâce à des activités interactives.",
             "picture_1Alt": "Capture d'écran 1 de Space English",
             "picture_2Alt": "Capture d'écran 2 de Space English",
             "picture_3Alt": "Capture d'écran 3 de Space English"
-        },
-        "p4": {
-            "title": "Universal Movers",
-            "description": "Page d'aterrisage des services de déménagement, utilisant une conversion pixel-perfect à partir du design Figma.",
-            "picture_1Alt": "Capture d'écran 1 de Universal Movers",
-            "picture_2Alt": "Capture d'écran 2 de Universal Movers",
-            "picture_3Alt": "Capture d'écran 3 de Universal Movers"
         }
     },
 

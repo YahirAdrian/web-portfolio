@@ -153,6 +153,7 @@
                 <h2 class="text-4xl md:text-5xl font-bold"><img class="inline w-10 md:w-12 mr-2 align-middle" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f5c2.svg" alt="Folder icon"/> <span data-i18n="projects.title"></span></h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
                     <!-- Project 1 -->
+                     
                     <div class="bg-dark rounded-xl shadow-gray-400/10 shadow-lg p-6 lg:p-10 flex flex-col hover:scale-105 transition-transform">
                         <div class="relative w-full mb-4 overflow-hidden rounded-lg">
                             <div class="swiper swiper1">
@@ -188,21 +189,54 @@
                     </div>
 
                     <!-- Project 2 -->
-                    <div class="bg-dark shadow-gray-400/10 rounded-xl shadow-lg p-6 lg:p-10 flex flex-col hover:scale-105 transition-transform">
+                     <div class="bg-dark rounded-xl shadow-gray-400/10 shadow-lg p-6 lg:p-10 flex flex-col hover:scale-105 transition-transform">
                         <div class="relative w-full mb-4 overflow-hidden rounded-lg">
-                            <div class="swiper swiper2">
+                            <span class="absolute top-2 left-2 bg-orange-500 text-white font-bold px-3 py-1 rounded-full text-sm z-2" data-i18n="projects.status.in_development"></span>
+                            <div class="swiper swiper4">
                                 <div class="swiper-wrapper aspect-video">
-                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/2.1-ClassPlanner.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p2.picture_1Alt"></div>
-                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/2.2-ClassPlanner.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p2.picture_2Alt"></div>
-                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/2.3-ClassPlanner.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p2.picture_3Alt"></div>
+                                        <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/6.1-Shoppy.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p2.picture_1Alt"></div>
                                 </div>
                                 <div class="swiper-pagination"></div>
                                 <div class="swiper-button-prev"></div>
                                 <div class="swiper-button-next"></div>
                             </div>
                         </div>
-                        <h3 class="text-2xl md:text-3xl font-semibold mb-2" data-i18n="projects.p2.title"></h3>
+                        <h3 class="text-2xl font-semibold mb-2" data-i18n="projects.p2.title"></h3>
                         <p class="mb-4 text-gray-300 md:text-xl" data-i18n="projects.p2.description"></p>
+                        <div class="tech-tags mb-4">
+                            <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">PHP</span>
+                            <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">Laravel</span>
+                            <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">Blade</span>
+                            <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">TailwindCSS</span>
+                        </div>
+                        <div class="mt-auto flex gap-3">
+                            <a href="javascript:void(0);" class="py-2 px-4 bg-accent text-white rounded-lg font-bold hover:bg-primary-600 transition cursor-not-allowed opacity-50" disable>
+                                <img src="assets/icons/light/external-link.svg" width="16" class="inline mr-2" data-i18n-attr="alt:projects.preview_iconAlt"/>
+                                <span data-i18n="projects.preview_soon"></span>
+                            </a>
+                            <a href="https://github.com/YahirAdrian/Shoppy" target="_blank" class="py-2 px-4 border border-gray- bg-primary-700 rounded-lg font-bold hover:bg-primary-500 hover:text-white transition">
+                                <img src="assets/icons/light/github.svg" width="16" class="inline mr-2" data-i18n-attr="alt:projects.code_iconAlt" />
+                                <span data-i18n="projects.code"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="bg-dark shadow-gray-400/10 rounded-xl shadow-lg p-6 lg:p-10 flex flex-col hover:scale-105 transition-transform">
+                        <div class="relative w-full mb-4 overflow-hidden rounded-lg">
+                            <div class="swiper swiper2">
+                                <div class="swiper-wrapper aspect-video">
+                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/2.1-ClassPlanner.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p3.picture_1Alt"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/2.2-ClassPlanner.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p3.picture_2Alt"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/2.3-ClassPlanner.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p3.picture_3Alt"></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl md:text-3xl font-semibold mb-2" data-i18n="projects.p3.title"></h3>
+                        <p class="mb-4 text-gray-300 md:text-xl" data-i18n="projects.p3.description"></p>
                         <div class="tech-tags mb-4">
                             <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">React</span>
                             <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">JavaScript</span>
@@ -220,22 +254,22 @@
                         </div>
                     </div>
 
-                    <!-- Project 3-->
+                    <!-- Project 4-->
                     <div class="bg-dark rounded-xl shadow-gray-400/10 shadow-lg p-6 flex flex-col hover:scale-105 transition-transform">
                         <div class="relative w-full mb-4 overflow-hidden rounded-lg">
                             <div class="swiper swiper3">
                                 <div class="swiper-wrapper aspect-video">
-                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/3.1-SpaceEnglish.avif" alt="Space English project screenshot 1" class="object-cover w-full h-full"></div>
-                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/3.2-SpaceEnglish.avif" alt="Space English project screenshot 2" class="object-cover w-full h-full"></div>
-                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/3.3-SpaceEnglish.avif" alt="Space English project screenshot 2" class="object-cover w-full h-full"></div>
+                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/3.1-SpaceEnglish.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p4.picture_1Alt"/></div>
+                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/3.2-SpaceEnglish.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p4.picture_2Alt"/></div>
+                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/3.3-SpaceEnglish.avif" class="object-cover w-full h-full" data-i18n-attr="alt:projects.p4.picture_3Alt"/></div>
                                 </div>
                                 <div class="swiper-pagination"></div>
                                 <div class="swiper-button-prev"></div>
                                 <div class="swiper-button-next"></div>
                             </div>
                         </div>
-                        <h3 class="text-2xl font-semibold mb-2">Space English</h3>
-                        <p class="mb-4 text-gray-300 md:text-xl" data-i18n="projects.p3.description"></p>
+                        <h3 class="text-2xl font-semibold mb-2" data-i18n="projects.p4.title"></h3>
+                        <p class="mb-4 text-gray-300 md:text-xl" data-i18n="projects.p4.description"></p>
                         <div class="tech-tags mb-4">
                             <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">HTML</span>
                             <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">CSS</span>
@@ -248,39 +282,6 @@
                                 <span data-i18n="projects.preview"></span>
                             </a>
                             <a href="https://github.com/YahirAdrian/spaceenglish" target="_blank" class="py-2 px-4 border border-gray- bg-primary-700 rounded-lg font-bold hover:bg-primary-500 hover:text-white transition">
-                                <img src="assets/icons/light/github.svg" width="16" class="inline mr-2" data-i18n-attr="alt:projects.code_iconAlt" />
-                                <span data-i18n="projects.code"></span>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Project 4 -->
-                    <div class="bg-dark rounded-xl shadow-gray-400/10 shadow-lg p-6 lg:p-10 flex flex-col hover:scale-105 transition-transform">
-                        <div class="relative w-full mb-4 overflow-hidden rounded-lg">
-                            <div class="swiper swiper4">
-                                <div class="swiper-wrapper aspect-video">
-                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/4.1-Universal-Movers.avif" alt="Universal Movers project screenshot 1" class="object-cover w-full h-full"></div>
-                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/4.2-Universal-Movers.avif" alt="Universal Movers project screenshot 2" class="object-cover w-full h-full"></div>
-                                    <div class="swiper-slide"><img class="aspect-video" width="100%" height="100%" src="assets/projects/4.3-Universal-Movers.avif" alt="Universal Movers project screenshot 2" class="object-cover w-full h-full"></div>
-                                </div>
-                                <div class="swiper-pagination"></div>
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
-                            </div>
-                        </div>
-                        <h3 class="text-2xl font-semibold mb-2">Univesal Movers</h3>
-                        <p class="mb-4 text-gray-300 md:text-xl" data-i18n="projects.p4.description"></p>
-                        <div class="tech-tags mb-4">
-                            <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">HTML</span>
-                            <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">CSS</span>
-                            <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">JavaScript</span>
-                            <span class="inline-block bg-accent-dark text-white  text-sm font-semibold mr-2 px-3 py-1 rounded-full mb-2">Bootstrap</span>
-                        </div>
-                        <div class="mt-auto flex gap-3">
-                            <a href="https://universal-movers-template.netlify.app/" target="_blank" class="py-2 px-4 bg-accent text-white rounded-lg font-bold hover:bg-primary-600 transition">
-                                <img src="assets/icons/light/external-link.svg" width="16" class="inline mr-2" data-i18n-attr="alt:projects.preview_iconAlt"/>
-                                <span data-i18n="projects.preview"></span>
-                            </a>
-                            <a href="https://github.com/YahirAdrian/universal-movers" target="_blank" class="py-2 px-4 border border-gray- bg-primary-700 rounded-lg font-bold hover:bg-primary-500 hover:text-white transition">
                                 <img src="assets/icons/light/github.svg" width="16" class="inline mr-2" data-i18n-attr="alt:projects.code_iconAlt" />
                                 <span data-i18n="projects.code"></span>
                             </a>

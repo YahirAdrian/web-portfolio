@@ -94,3 +94,49 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     }
 });
+
+//Typewriter effect for terminal text
+
+const terminalTexts = document.querySelectorAll('.terminal-text');
+terminalTexts.forEach(el => el.style.visibility = 'hidden');
+
+const observerOptions = { threshold: 0.5 };
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+            entry.target.classList.add('animated');
+            typeWriter(entry.target);
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+if (terminalTexts.length > 0) {
+    observer.observe(terminalTexts[0]);
+}
+
+function typeWriter(element) {
+    element.style.visibility = 'visible';
+    const text = element.textContent;
+    element.textContent = '';
+    let i = 0;
+    const speed = 35;
+    function type() {
+        if (i < text.length) {
+            element.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+        } else {
+            animateNextParagraph(element);
+        }
+    }
+    type();
+}
+
+function animateNextParagraph(element) {
+    const nextElement = element.parentElement.nextElementSibling?.querySelector('.terminal-text');
+    if (nextElement && !nextElement.classList.contains('animated')) {
+        nextElement.classList.add('animated');
+        typeWriter(nextElement);
+    }
+}
